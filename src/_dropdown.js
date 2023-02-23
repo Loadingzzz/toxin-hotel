@@ -9,7 +9,7 @@ myDropdown.forEach(dropdown => {
     const selected = document.querySelector('.selected');
     
     select.addEventListener('click', () => {
-        select.classList.toggle('select-cliked');
+        select.classList.toggle('select-clicked');
         caret.classList.toggle('caret-rotate');
         menu.classList.toggle('menu-open');
     });
