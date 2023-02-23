@@ -18,11 +18,13 @@
         <h3>dropdown</h3>
         <div class="dropdown">
           <div class="select">
-            <div class="selected guestQuantity"><p>Сколько гостей</p></div>
+            <div class="selected guestQuantity">
+              <p>Сколько гостей</p>
+            </div>
             <div class="caret"></div>
           </div>
           <ul class="menu">
-            <li class="menu__item">
+            <li class="menu__item" data-value="old">
               <h3>взрослые</h3>
               <div class="counter counter-one">
                 <button
@@ -40,7 +42,7 @@
                 </button>
               </div>
             </li>
-            <li class="menu__item">
+            <li class="menu__item" data-value="baby">
               <h3>дети</h3>
               <div class="counter counter-two">
                 <button
@@ -58,7 +60,7 @@
                 </button>
               </div>
             </li>
-            <li class="menu__item">
+            <li class="menu__item" data-value="born">
               <h3>младенцы</h3>
               <div class="counter counter-three">
                 <button
@@ -82,37 +84,74 @@
             </div>
           </ul>
         </div>
-      </div>
-      <div class="counter">
-        <button
-          class="counter__button counter__button-minus"
-          data-direction="minus"
-        >
-          -
-        </button>
-        <input type="text" class="counter__value" value="0" data-counter />
-        <button
-          class="counter__button counter__button-plus"
-          data-direction="plus"
-        >
-          +
-        </button>
-      </div>
-
-      <div class="counter">
-        <button
-          class="counter__button counter__button-minus"
-          data-direction="minus"
-        >
-          -
-        </button>
-        <div class="counter__value">0</div>
-        <button
-          class="counter__button counter__button-plus"
-          data-direction="plus"
-        >
-          +
-        </button>
+        <div class="dropdown">
+          <div class="select">
+            <div class="selected guestQuantity">
+              <p>Сколько гостей</p>
+            </div>
+            <div class="caret"></div>
+          </div>
+          <ul class="menu">
+            <li class="menu__item" data-value="old">
+              <h3>взрослые</h3>
+              <div class="counter counter-one">
+                <button
+                  class="counter__button counter__button-minus counter__button-minus-one"
+                  data-direction="minus"
+                >
+                  -
+                </button>
+                <div class="counter__value counter__value-one">0</div>
+                <button
+                  class="counter__button counter__button-plus"
+                  data-direction="plus"
+                >
+                  +
+                </button>
+              </div>
+            </li>
+            <li class="menu__item" data-value="baby">
+              <h3>дети</h3>
+              <div class="counter counter-two">
+                <button
+                  class="counter__button counter__button-minus counter__button-minus-two"
+                  data-direction="minus"
+                >
+                  -
+                </button>
+                <div class="counter__value counter__value-two">0</div>
+                <button
+                  class="counter__button counter__button-plus"
+                  data-direction="plus"
+                >
+                  +
+                </button>
+              </div>
+            </li>
+            <li class="menu__item" data-value="born">
+              <h3>младенцы</h3>
+              <div class="counter counter-three">
+                <button
+                  class="counter__button counter__button-minus counter__button-minus-three"
+                  data-direction="minus"
+                >
+                  -
+                </button>
+                <div class="counter__value counter__value-three">0</div>
+                <button
+                  class="counter__button counter__button-plus"
+                  data-direction="plus"
+                >
+                  +
+                </button>
+              </div>
+            </li>
+            <div class="menu__buttons">
+              <button class="menu__button-clean" data-clean>очистить</button>
+              <button class="menu__button-apply" data-cart>применить</button>
+            </div>
+          </ul>
+        </div>
       </div>
     </div>
   </body>

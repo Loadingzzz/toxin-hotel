@@ -209,7 +209,36 @@ $ffm: 'Montserrat', sans-serif;
 
 
 
+
+
+.menu__buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu__buttons-rToClean {
+    display: flex;
+    justify-content: space-between;   
+}
+
+.menu__button-apply {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    font-family: $ffm;
+    margin-right: 7px;
+    margin-bottom: 13px;
+    padding: 0;
+    color: $purple;
+    border: none;
+    background-color: #fff;
+}
+
 .menu__button-clean {
+    display: none;
+    cursor: pointer;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 12px;
@@ -223,23 +252,8 @@ $ffm: 'Montserrat', sans-serif;
     background-color: #fff;
 }
 
-.menu__buttons {
-    display: flex;
-    justify-content: space-between;
-}
-
-.menu__button-apply {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 15px;
-    font-family: $ffm;
-    margin-right: 7px;
-    margin-bottom: 13px;
-    padding: 0;
-    color: $purple;
-    border: none;
-    background-color: #fff;
+.menu__button-clean_active {
+    display: block;
 }
 
 
