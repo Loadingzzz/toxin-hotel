@@ -1,0 +1,49 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+p, h1, h2 ,h3 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 23px;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+
+p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+ul , li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
