@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
@@ -19,9 +23,11 @@
         <div class="dropdown">
           <div class="select">
             <div class="selected guestQuantity">
-              <p>Сколько гостей</p>
+            Сколько гостей
             </div>
-            <div class="caret"></div>
+            <div class="caret">
+              <span class="material-icons-outlined"> expand_more </span>
+            </div>
           </div>
           <ul class="menu">
             <li class="menu__item" data-value="old">
@@ -79,8 +85,8 @@
               </div>
             </li>
             <div class="menu__buttons">
-              <button class="menu__button-clean" data-clean>очистить</button>
-              <button class="menu__button-apply" data-cart>применить</button>
+              <button class="menu__button-clean" data-dropDownClean>очистить</button>
+              <button class="menu__button-apply" data-dropDownCart>применить</button>
             </div>
           </ul>
         </div>
@@ -89,7 +95,9 @@
             <div class="selected guestQuantity">
               <p>Сколько гостей</p>
             </div>
-            <div class="caret"></div>
+            <div class="caret">
+              <span class="material-icons-outlined"> expand_more </span>
+            </div>
           </div>
           <ul class="menu">
             <li class="menu__item" data-value="old">
@@ -147,11 +155,97 @@
               </div>
             </li>
             <div class="menu__buttons">
-              <button class="menu__button-clean" data-clean>очистить</button>
-              <button class="menu__button-apply" data-cart>применить</button>
+              <button class="menu__button-clean" data-dropDownClean>очистить</button>
+              <button class="menu__button-apply" data-dropDownCart>применить</button>
             </div>
           </ul>
         </div>
+        <div class="customDropdown">
+          <div class="select">
+            <div class="selected guestQuantity">
+              <p class="customDropdown_text">Сколько помещений</p>
+            </div>
+            <div class="caret">
+              <span class="material-icons-outlined"> expand_more </span>
+            </div>
+          </div>
+          <ul class="menu">
+            <li class="menu__item menu__item-one" data-value="old">
+              <h3 class="dropdown__item__title-one">спальни</h3>
+              <div class="counter counter-one">
+                <button
+                  class="counter__button counter__button-minus counter__button-minus-one"
+                  data-direction="minus"
+                >
+                  -
+                </button>
+                <div class="counter__value counter__value-one">0</div>
+                <button
+                  class="counter__button counter__button-plus counter__button-plus-one"
+                  data-direction="plus"
+                >
+                  +
+                </button>
+              </div>
+            </li>
+            <li class="menu__item menu__item-two" data-value="baby">
+              <h3 class="dropdown__item__title-two">кровати</h3>
+              <div class="counter counter-two">
+                <button
+                  class="counter__button counter__button-minus counter__button-minus-two"
+                  data-direction="minus"
+                >
+                  -
+                </button>
+                <div class="counter__value counter__value-two">0</div>
+                <button
+                  class="counter__button counter__button-plus counter__button-plus-two"
+                  data-direction="plus"
+                >
+                  +
+                </button>
+              </div>
+            </li>
+            <li class="menu__item menu__item-three" data-value="born">
+              <h3 class="dropdown__item__title-three">ванные комнаты</h3>
+              <div class="counter counter-three">
+                <button
+                  class="counter__button counter__button-minus counter__button-minus-three"
+                  data-direction="minus"
+                >
+                  -
+                </button>
+                <div class="counter__value counter__value-three">0</div>
+                <button
+                  class="counter__button counter__button-plus counter__button-plus-three"
+                  data-direction="plus"
+                >
+                  +
+                </button>
+              </div>
+            </li>
+            <!-- <div class="menu__buttons">
+              <button class="menu__button-clean" data-clean>очистить</button>
+              <button class="menu__button-apply" data-apply>применить</button>
+            </div> -->
+          </ul>
+        </div>
+      </div>
+      <div class="form">
+        
+        <div class="form__input">
+          <h3>Text Field</h3>
+          <div class="form__input-textfield">
+            <input id="inputemail" type="email" class="form__input-email" value="0">
+            <label for="inputemail" class="form__label-textfield">Email</label>
+          </div>
+        </div>
+      </div>
+      <div class="buttons-test">
+        <div class="button">
+          <button class="button-clickme"><h3 class="button__title-clickme">CLICK ME</h3></button>
+        </div>
+
       </div>
     </div>
   </body>

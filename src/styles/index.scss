@@ -9,9 +9,17 @@ $ds25:rgba(31, 32, 65, 0.25);
 $ds5:rgba(31, 32, 65, 0.05);
 $purple: rgba(188, 156, 255, 1);
 $green: rgba(111, 207, 151, 1);
+$linear1: linear-gradient(180deg, rgba(188, 156, 255, 1),rgba(139, 164, 249, 1));
+$linear2: linear-gradient(180deg, rgba(188, 156, 255, 0.5),rgba(139, 164, 249, 0.5));
 
 
 $ffm: 'Montserrat', sans-serif;
+
+h3 {
+    color:$ds100;
+}
+
+
 
 .container {
     margin: auto;
@@ -112,17 +120,18 @@ $ffm: 'Montserrat', sans-serif;
     width: 320px;
     height: 44px;
     border: 1px solid $ds25;
-    border-top-right-radius: 4px;
-    border-top-left-radius: 4px;
+    border-radius: 4px;
     text-align-last: left;
     display: flex;
     align-items: center;
-    // padding-left: 15px;
-    transition: all .3s;
+    justify-content: space-between;
+    
+    transition: border .3s;
 }
 
 
 .selected {
+    color:$ds75;
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
@@ -131,16 +140,27 @@ $ffm: 'Montserrat', sans-serif;
 }
 
 .select-clicked {
- border-color: $ds50;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-color: $ds50;
 }
 
 .select:hover {
     border: 1px solid $ds50;
 }
 
+.caret {
+    color: $ds50;
+    user-select: none;
+    margin-right: 13px;
+    font-family: 'Material Icons';
+    // transition: all .05s;
+}
 
 .caret-rotate {
+    color: $ds75;
     transform: rotate(180deg);
+    // padding-right: 13px;
 }
 
 .menu {
@@ -211,6 +231,7 @@ $ffm: 'Montserrat', sans-serif;
 
 
 
+
 .menu__buttons {
     display: flex;
     justify-content: flex-end;
@@ -256,5 +277,89 @@ $ffm: 'Montserrat', sans-serif;
     display: block;
 }
 
+.customDropdown .select,
+.customDropdown .menu {
+    max-width: 266px;
+}
 
+.dropdown__item__title-apply {
+    text-transform: lowercase;
+}
+
+
+.customDropdown .selected {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.form__input-textfield {
+    position: relative;
+}
+
+
+
+.form__input-email {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    width: 305px;
+    height: 44px;
+    padding-left: 15px;
+    border: 1px solid $ds25;
+    border-radius: 4px;
+    color: $ds75;
+    text-transform: capitalize;
+}
+
+.form__label-textfield {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: $ds25;
+    position: absolute;
+    top: 15px;
+    bottom: 8px;
+    left: 14px;
+}
+
+
+.button-clickme {
+    position: relative;
+    width: 99px;
+    height: 44px;
+    border: none;
+    background-image: $linear1;
+    border-radius: 22px;
+    text-align: center;
+}
+
+.button-clickme::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    background: $linear1;
+    border-radius: 22px;
+    z-index: -1;
+}
+
+
+.button__title-clickme {
+    text-align: center;
+    color: #fff;
+}
+
+
+
+
+
+
+
+// .form__input-email:hover ~ .form__label-textfield {
+
+// }
 

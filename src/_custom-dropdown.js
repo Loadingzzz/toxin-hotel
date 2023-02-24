@@ -1,4 +1,4 @@
-const dropDown = document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
+const dropDown = document.querySelectorAll('.customDropdown').forEach(function (dropDownWrapper) {
 
 
 
@@ -27,7 +27,7 @@ const dropDown = document.querySelectorAll('.dropdown').forEach(function (dropDo
 
 
     document.addEventListener('click', function (e) {
-      // console.log('document click')
+    //   console.log('document click')
       const dropDownButtonText = dropDownBtn.querySelector('.selected')
       const dropDownCaretInner = dropDownBtn.querySelector('.material-icons-outlined')
       const dropDownClean = dropDownWrapper.querySelector('.menu__button-clean_active')
@@ -49,7 +49,3 @@ const dropDown = document.querySelectorAll('.dropdown').forEach(function (dropDo
        }
     })
 });
-
-
-
-
