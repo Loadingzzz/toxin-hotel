@@ -21,9 +21,11 @@ module.exports = {
             {filename: '[name].[contenthash].css'}
         ),
         new HtmlWebpackPlugin( {
-            filename: "index.html",
-        template: "./src/index.html"
+            template: "./src/index.pug"
     }),
+        new HtmlWebpackPlugin ({
+            template: "./src/pug/_head.pug"
+        }),
         new HtmlWebpackPlugin( {
         filename: "color-and-types.html",
         template: "./src/color-and-types.html"
@@ -53,9 +55,14 @@ module.exports = {
 
             },
             {
-            test: /\.(woff|woff2|eot|ttf|otf)$/i,
-            type: 'asset/resource',
+                test: /\.pug$/,
+                loader: 'pug-loader',
+                exclude: /(node_modules|bower_components)/,
             },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/i,
+                type: 'asset/resource',
+                },
             {
                 test: /\.m&js$/,
                 exclude: /node_module/,
@@ -69,3 +76,7 @@ module.exports = {
         ]
     },
 }
+
+
+
+        

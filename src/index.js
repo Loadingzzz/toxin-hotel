@@ -1,12 +1,13 @@
-import './_input-email.js';
+import './index.pug';
+import './pug/_head.pug';
 import './styles/index.scss';
-import './index.html';
+import './scripts/_input-email.js';
 import './color-and-types.html';
 import './form-elements.html';
-import './_counter.js';
-import './_dropdown.js';
-import './_custom-dropdown.js';
-import './_custom-counter.js';
+import './scripts/_counter.js';
+import './scripts/_dropdown.js';
+import './scripts/_custom-dropdown.js';
+import './scripts/_custom-counter.js';
 
 
 
