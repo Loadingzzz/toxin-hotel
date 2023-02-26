@@ -1,6 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin =require('mini-css-extract-plugin');
-
+const path = require('path')
 
 let mode = 'development'
 if (process.env.NODE_ENV === 'production') {
@@ -21,19 +21,22 @@ module.exports = {
             {filename: '[name].[contenthash].css'}
         ),
         new HtmlWebpackPlugin( {
-            template: "./src/index.pug"
+            filename:'index.html',
+            template:path.join(__dirname, 'src', 'index.pug'),
     }),
         new HtmlWebpackPlugin ({
+            filename: '_head.pug',
             template: "./src/pug/_head.pug"
-        }),
+    }),
         new HtmlWebpackPlugin( {
         filename: "color-and-types.html",
-        template: "./src/color-and-types.html"
+        template: "./src/color-and-types.pug"
     }),
     new HtmlWebpackPlugin( {
         filename: "form-elements.html",
-        template: "./src/form-elements.html"
-    })],
+        template: "./src/form-elements.pug"
+    })
+    ],
     
     module: {
         rules:[{
