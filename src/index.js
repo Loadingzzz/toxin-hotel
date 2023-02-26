@@ -1,4 +1,4 @@
-app.use(express.static('public'))
+
 import './color-and-types.pug';
 import './index.pug';
 import './pug/_head.pug';
