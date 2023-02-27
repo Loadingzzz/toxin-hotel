@@ -1,0 +1,42 @@
+$ds100:rgba(31, 32, 65, 1);
+$ds75:rgba(31, 32, 65, 0.75);
+$ds50:rgba(31, 32, 65, 0.5);
+$ds25:rgba(31, 32, 65, 0.25);
+$ds5:rgba(31, 32, 65, 0.05);
+$purple: rgba(188, 156, 255, 1);
+$green: rgba(111, 207, 151, 1);
+$linear1: linear-gradient(180deg, rgba(188, 156, 255, 1),rgba(139, 164, 249, 1));
+$linear2: linear-gradient(180deg, rgba(188, 156, 255, 0.5),rgba(139, 164, 249, 0.5));
+
+.expanded__checkbox__caret {
+    font-family: 'Material Symbols Outlined';
+    font-size: 24px;
+    color: $ds50;
+}
+
+.expanded__checkbox___title{
+    padding-right: 45px;
+}
+
+.expanded__checkbox___top {
+    display: flex;
+    align-items: center;
+}
+
+.expanded__checkbox__menu {
+    padding-top: 18px;
+    display: none;
+}
+
+.expanded__checkbox__menu-open {
+    display: block;
+}
+
+
+.expanded__checkbox__item {
+    padding-bottom: 10px;
+}
+
+.expanded__checkbox__caret-rotate {
+    transform: rotate(180deg);
+}

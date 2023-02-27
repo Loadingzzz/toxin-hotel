@@ -1,0 +1,54 @@
+$ds100:rgba(31, 32, 65, 1);
+$ds75:rgba(31, 32, 65, 0.75);
+$ds50:rgba(31, 32, 65, 0.5);
+$ds25:rgba(31, 32, 65, 0.25);
+$ds5:rgba(31, 32, 65, 0.05);
+$purple: rgba(188, 156, 255, 1);
+$green: rgba(111, 207, 151, 1);
+$linear1: linear-gradient(180deg, rgba(188, 156, 255, 1),rgba(139, 164, 249, 1));
+$linear2: linear-gradient(180deg, rgba(188, 156, 255, 0.5),rgba(139, 164, 249, 0.5));
+
+
+
+.input__box {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.input__textfield{
+    box-sizing: border-box;
+    width: 320px;
+    height: 44px;
+    border: 1px solid $ds25;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $ds75;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 15px;
+    transition: all .2s;
+    outline: none;
+}
+
+.input__textfield::placeholder {
+    color: $ds25;
+    font-size: 14px;
+    font-weight: 18px;
+}
+
+.input__textfield:hover{
+    border: 1px solid $ds50;
+    
+}
+
+
+.input__textfield:focus{
+    border: 1px solid $ds50;
+    
+}
+
+.input__textfield-hovered {
+    border: 1px solid $ds50;
+}

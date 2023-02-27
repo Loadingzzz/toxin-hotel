@@ -4,6 +4,9 @@
 @use '_radio';
 @use '_buttons';
 @use '_toggle';
+@use '_input';
+@use '_bulletlist';
+@use '_exp-checkbox';
 
 $ds100:rgba(31, 32, 65, 1);
 $ds75:rgba(31, 32, 65, 0.75);
@@ -155,6 +158,7 @@ h3 {
 }
 
 .caret {
+    font-size: 24px;
     color: $ds50;
     user-select: none;
     margin-right: 13px;
@@ -168,6 +172,7 @@ h3 {
 }
 
 .menu {
+    user-select: none;
     width: 320px;
     border:1px solid $ds25;
     border-bottom-left-radius: 4px;
