@@ -1,0 +1,132 @@
+$ds100:rgba(31, 32, 65, 1);
+$ds75:rgba(31, 32, 65, 0.75);
+$ds50:rgba(31, 32, 65, 0.5);
+$ds25:rgba(31, 32, 65, 0.25);
+$ds5:rgba(31, 32, 65, 0.05);
+$purple: rgba(188, 156, 255, 1);
+$green: rgba(111, 207, 151, 1);
+$linear1: linear-gradient(180deg, rgba(188, 156, 255, 1),rgba(139, 164, 249, 1));
+$linear2: linear-gradient(180deg, rgba(188, 156, 255, 0.5),rgba(139, 164, 249, 0.5));
+
+.button__form {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.button__box {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+
+.button-clickme {
+    position: relative;
+    width: 99px;
+    height: 44px;
+    border: none;
+    background-image: $linear1;
+    border-radius: 22px;
+    text-align: center;
+    transition: background-image 0.3s;
+}
+
+.button-clickme:hover {
+    background-image: $linear2;
+}
+
+
+.button__title-clickme {
+    text-align: center;
+    color: #fff;
+}
+
+.button-ckickme_hovered { 
+    background-image: $linear2;
+}
+
+.button-clickme_border { 
+    background-color: #fff;
+    background-image: none;
+    border: 2px solid $purple;
+    border-image: $linear1;
+    border-image-slice: 1;
+}
+
+.button-clickme_border h3 {
+    color:$purple;
+}
+
+.button__cradient {
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+    width: 97px;
+    height: 42px;
+    border-radius: 30px;
+    background: #fff;
+    text-align: center;
+}
+
+.button__cradient::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    background: $linear1;
+    border-radius: 22px;
+    z-index: -1;
+}
+
+.button__title-gradient {
+    user-select: none;
+    width: 70px;
+    text-align: center;
+    color: $purple;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button__cradient-hovered::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    background: $linear2;
+    border-radius: 22px;
+    z-index: -1;
+}
+
+.button__title-clickme_ot {
+    color:$purple;
+    transition: all .2s;
+}
+
+.button__title-clickme_ot:hover {
+    color:$ds50;
+}
+
+.button__title-clickme_ot-hovered {
+    color:$ds50;
+}
+
+.button-payment {
+    position: relative;
+    width: 320px;
+    height: 44px;
+}
+
+.button__arrow {
+    right: 14px;
+    top: 10px;
+    position: absolute; 
+    color: #fff;
+}

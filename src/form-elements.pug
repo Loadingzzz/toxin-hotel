@@ -13,7 +13,7 @@ html(lang='en')
                     .select
                         .selected.guestQuantity Сколько гостей
                         .caret
-                            span.material-icons-outlined expand_more
+                            span.material-icons-outlined expand_more 
                     ul.menu
                         li.menu__item(data-value='old')
                             h3 взрослые
@@ -88,13 +88,82 @@ html(lang='en')
                                 button.counter__button.counter__button-minus.counter__button-minus-three(data-direction='minus') -
                                 .counter__value.counter__value-three 0
                                 button.counter__button.counter__button-plus.counter__button-plus-three(data-direction='plus') +
-            .form
-                .form__input
-                h3 Text Field
-                .form__input-textfield
-                    input#inputemail.form__input-email(type='email' value='0')
-                    label.form__label-textfield(for='inputemail') Email
-            .buttons-test
-                .button
-                button.button-clickme
-                    h3.button__title-clickme CLICK ME
+            .checkboxs
+                h3 Checkbox Buttons
+                .checkbox__box
+                    .checkbox__form
+                        label.checkbox__label Можно курить
+                            input.checkbox__input(type="checkbox")
+                            span.checkbox__style 
+                    .checkbox__form
+                        label.checkbox__label Можно с питомцами
+                            input.checkbox__input(type="checkbox" checked)
+                            span.checkbox__style 
+                    .checkbox__form
+                        label.checkbox__label Можно пригласить гостей (до 10 человек)
+                            input.checkbox__input(type="checkbox" checked)
+                            span.checkbox__style
+                    .checkbox__form.checkboxRich__form
+                        label.checkbox__label Широкий коридор
+                            p.checkboxRich__text Ширина коридоров в номере <br> не менее 91 см.
+                            input.checkbox__input(type="checkbox")
+                            span.checkbox__style
+                    .checkbox__form.checkboxRich__form
+                        label.checkbox__label Помощник для инвалидов
+                            p.checkboxRich__text На 1 этаже вас встретит специалист  и проводит до номера.
+                            input.checkbox__input(type="checkbox")
+                            span.checkbox__style
+            .radio
+                h3 Checkbox Buttons
+                .radio__box
+                    .radio__form
+                        label.radio__label Мужчина
+                            input.radio__input(type="radio" name="gender" checked)
+                            span.radio__style
+                    .radio__form
+                        label.radio__label Женщина
+                            input.radio__input(type="radio" name="gender")
+                            span.radio__style
+            .buttons
+                h3 buttons
+                .button__box
+                    .button__form
+                        .button
+                        button.button-clickme
+                            h3.button__title-clickme CLICK ME
+                    .button__form
+                        .button
+                        button.button-clickme.button-ckickme_hovered
+                            h3.button__title-clickme CLICK ME
+                    .button__form
+                        .button__cradient
+                            h3.button__title-clickme.button__title-gradient CLICK ME
+                    .button__form
+                        .button__cradient.button__cradient-hovered
+                            h3.button__title-clickme.button__title-gradient CLICK ME
+                    .button__form
+                        .button-clickme_ot
+                            h3.button__title-clickme.button__title-clickme_ot CLICK ME
+                    .button__form
+                        .button-clickme_ot
+                            h3.button__title-clickme.button__title-clickme_ot.button__title-clickme_ot-hovered CLICK ME
+                    .button__form
+                        .button
+                        button.button-clickme.button-payment
+                            h3.button__title-clickme перейти к оплате
+                            span.material-symbols-outlined.button__arrow arrow_forward
+                .toggle
+                    .toggle__box
+                        .toggle__form
+                            .checkbox__form
+                                label.switch__checkbox__label Получать спецпредложения
+                                    input.switch__checkbox__input(type="checkbox" checked )
+                                    span.switch__checkbox__style
+                                .checkbox__form
+                                label.switch__checkbox__label Получать спецпредложения
+                                    input.switch__checkbox__input(type="checkbox")
+                                    span.switch__checkbox__style
+
+                            
+                            
+                        

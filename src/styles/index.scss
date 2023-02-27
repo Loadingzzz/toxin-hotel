@@ -1,6 +1,9 @@
 @use '_global';
 @use '_fonts';
-
+@use '_checkbox';
+@use '_radio';
+@use '_buttons';
+@use '_toggle';
 
 $ds100:rgba(31, 32, 65, 1);
 $ds75:rgba(31, 32, 65, 0.75);
@@ -162,7 +165,6 @@ h3 {
 .caret-rotate {
     color: $ds75;
     transform: rotate(180deg);
-    // padding-right: 13px;
 }
 
 .menu {
@@ -171,7 +173,6 @@ h3 {
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
     padding-top: 13px;
-    // padding-bottom: 57px;
     display: none;
 }
 
@@ -296,64 +297,6 @@ h3 {
 }
 
 
-.form__input-textfield {
-    position: relative;
-}
-
-
-
-.form__input-email {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    width: 305px;
-    height: 44px;
-    padding-left: 15px;
-    border: 1px solid $ds25;
-    border-radius: 4px;
-    color: $ds75;
-    text-transform: capitalize;
-}
-
-.form__label-textfield {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    color: $ds25;
-    position: absolute;
-    top: 15px;
-    bottom: 8px;
-    left: 14px;
-}
-
-
-.button-clickme {
-    position: relative;
-    width: 99px;
-    height: 44px;
-    border: none;
-    background-image: $linear1;
-    border-radius: 22px;
-    text-align: center;
-}
-
-.button-clickme::before {
-    content: "";
-    position: absolute;
-    top: -1px;
-    bottom: -1px;
-    left: -1px;
-    right: -1px;
-    background: $linear1;
-    border-radius: 22px;
-    z-index: -1;
-}
-
-
-.button__title-clickme {
-    text-align: center;
-    color: #fff;
-}
 
 
 

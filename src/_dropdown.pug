@@ -1,0 +1,27 @@
+.dropdown
+    .select
+        .selected.guestQuantity Сколько гостей
+        .caret
+            span.material-icons-outlined expand_more 
+    ul.menu
+        li.menu__item(data-value='old')
+            h3 взрослые
+            .counter.counter-one
+                button.counter__button.counter__button-minus.counter__button-minus-one(data-direction='minus') -
+                .counter__value.counter__value-one 0
+                button.counter__button.counter__button-plus(data-direction='plus') +
+        li.menu__item(data-value='baby')
+            h3 дети
+            .counter.counter-two
+                button.counter__button.counter__button-minus.counter__button-minus-two(data-direction='minus') -
+                .counter__value.counter__value-two 0
+                button.counter__button.counter__button-plus(data-direction='plus') +
+        li.menu__item(data-value='born')
+            h3 младенцы
+            .counter.counter-three
+                button.counter__button.counter__button-minus.counter__button-minus-three(data-direction='minus') -
+                .counter__value.counter__value-three 0
+                button.counter__button.counter__button-plus(data-direction='plus') +
+        .menu__buttons
+            button.menu__button-clean(data-dropdownclean='') очистить
+            button.menu__button-apply(data-dropdowncart='') применить
