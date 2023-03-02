@@ -81,6 +81,23 @@ $linear2: linear-gradient(180deg, rgba(188, 156, 255, 0.5),rgba(139, 164, 249, 0
     z-index: -1;
 }
 
+
+
+.button__cradient::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    background: $linear1;
+    border-radius: 22px;
+    z-index: -1;
+}
+
+
+
 .button__title-gradient {
     user-select: none;
     width: 70px;
@@ -107,6 +124,8 @@ $linear2: linear-gradient(180deg, rgba(188, 156, 255, 0.5),rgba(139, 164, 249, 0
 
 .button__title-clickme_ot {
     color:$purple;
+    user-select: none;
+    cursor: pointer;
     transition: all .2s;
 }
 

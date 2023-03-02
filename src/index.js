@@ -5,11 +5,14 @@ import './index.pug';
 import './pug/_head.pug';
 import './styles/index.scss';
 import './scripts/_input-email.js';
+import './scripts/_buttons.js';
 
-import './scripts/_exp-checkbox.js';
-import './scripts/_counter.js';
+
 import './scripts/_dropdown.js';
 import './scripts/_custom-dropdown.js';
+import './scripts/_exp-checkbox.js';
+import './scripts/_counter.js';
+
 import './scripts/_custom-counter.js';
 
 
