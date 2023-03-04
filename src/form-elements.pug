@@ -152,100 +152,156 @@ html(lang='en')
                         button.button-clickme.button-payment
                             h3.button__title-clickme перейти к оплате
                             span.material-symbols-outlined.button__arrow arrow_forward
-                .toggle
-                    .toggle__box
-                        .toggle__form
+            .toggle
+                .toggle__box
+                    .toggle__form
+                        .checkbox__form
+                            label.switch__checkbox__label Получать спецпредложения
+                                input.switch__checkbox__input(type="checkbox" checked )
+                                span.switch__checkbox__style
                             .checkbox__form
-                                label.switch__checkbox__label Получать спецпредложения
-                                    input.switch__checkbox__input(type="checkbox" checked )
-                                    span.switch__checkbox__style
-                                .checkbox__form
-                                label.switch__checkbox__label Получать спецпредложения
-                                    input.switch__checkbox__input(type="checkbox")
-                                    span.switch__checkbox__style
-                .input
-                    .input__box
-                        .input__form
-                            input.input__textfield(type="text" placeholder="Email")
-                    .input__box
-                        .input__form
-                            input.input__textfield.input__textfield-hovered(type="text" placeholder="Email" value="This is pretty awesome") 
-                .bulletlist
-                    .bulletlist__box
-                        .bulletlist__form
-                            ul.bulletlist__list
-                                li.bulletlist__item
-                                    .bulletlist__disk 
-                                    p.bulletlist__text Нельзя с питомцами
-                                li.bulletlist__item
-                                    .bulletlist__disk
-                                    p.bulletlist__text Без вечеринок и мероприятий
-                                li.bulletlist__item
-                                    .bulletlist__disk
-                                    p.bulletlist__text Время прибытия — после 13:00, а выезд до 12:00
-                .expanded__checkbox-test
-                        .expanded__checkbox
-                            .expanded__checkbox___top
-                                h3.expanded__checkbox___title expandable checkbox list
-                                .expanded__checkbox__caret
-                                    span.material-icons-outlined expand_more
-                            ul.expanded__checkbox__menu
-                                li.expanded__checkbox__item
-                                    .expanded__checkbox__checkbox
-                                        label.checkbox__label Завтрак
-                                            input.checkbox__input(type="checkbox")
-                                            span.checkbox__style
-                                li.expanded__checkbox__item
-                                    .expanded__checkbox__checkbox
-                                        label.checkbox__label Письменный стол
-                                            input.checkbox__input(type="checkbox")
-                                            span.checkbox__style 
-                                li.expanded__checkbox__item
-                                    .expanded__checkbox__checkbox
-                                        label.checkbox__label Кроватка
-                                            input.checkbox__input(type="checkbox")
-                                            span.checkbox__style
-                                li.expanded__checkbox__item
-                                    .expanded__checkbox__checkbox
-                                        label.checkbox__label Телевизор
-                                            input.checkbox__input(type="checkbox")
-                                            span.checkbox__style
-                                li.expanded__checkbox__item
-                                    .expanded__checkbox__checkbox
-                                        label.checkbox__label Шампунь
-                                            input.checkbox__input(type="checkbox")
-                                            span.checkbox__style
-                        .expanded__checkbox
-                            .expanded__checkbox___top
-                                h3.expanded__checkbox___title expandable checkbox list
-                                .expanded__checkbox__caret
-                                    span.material-icons-outlined.expanded__caret expand_more
-                            ul.expanded__checkbox__menu
-                                li.expanded__checkbox__item
-                                    .expanded__checkbox__checkbox
-                                        label.checkbox__label Завтрак
-                                            input.checkbox__input(type="checkbox")
-                                            span.checkbox__style
-                                li.expanded__checkbox__item
-                                    .expanded__checkbox__checkbox
-                                        label.checkbox__label Письменный стол
-                                            input.checkbox__input(type="checkbox")
-                                            span.checkbox__style 
-                                li.expanded__checkbox__item
-                                    .expanded__checkbox__checkbox
-                                        label.checkbox__label Кроватка
-                                            input.checkbox__input(type="checkbox")
-                                            span.checkbox__style
-                                li.expanded__checkbox__item
-                                    .expanded__checkbox__checkbox
-                                        label.checkbox__label Телевизор
-                                            input.checkbox__input(type="checkbox")
-                                            span.checkbox__style
-                                li.expanded__checkbox__item
-                                    .expanded__checkbox__checkbox
-                                        label.checkbox__label Шампунь
-                                            input.checkbox__input(type="checkbox")
-                                            span.checkbox__style
-                        
-
+                            label.switch__checkbox__label Получать спецпредложения
+                                input.switch__checkbox__input(type="checkbox")
+                                span.switch__checkbox__style
+            .input
+                .input__box
+                    .input__form
+                        input.input__textfield(type="text" placeholder="Email")
+                .input__box
+                    .input__form
+                        input.input__textfield.input__textfield-hovered(type="text" placeholder="Email" value="This is pretty awesome") 
+            .bulletlist
+                .bulletlist__box
+                    .bulletlist__form
+                        ul.bulletlist__list
+                            li.bulletlist__item
+                                .bulletlist__disk 
+                                p.bulletlist__text Нельзя с питомцами
+                            li.bulletlist__item
+                                .bulletlist__disk
+                                p.bulletlist__text Без вечеринок и мероприятий
+                            li.bulletlist__item
+                                .bulletlist__disk
+                                p.bulletlist__text Время прибытия — после 13:00, а выезд до 12:00
+            .expanded__checkbox-test
+                    .expanded__checkbox
+                        .expanded__checkbox___top
+                            h3.expanded__checkbox___title expandable checkbox list
+                            .expanded__checkbox__caret
+                                span.material-icons-outlined expand_more
+                        ul.expanded__checkbox__menu
+                            li.expanded__checkbox__item
+                                .expanded__checkbox__checkbox
+                                    label.checkbox__label Завтрак
+                                        input.checkbox__input(type="checkbox")
+                                        span.checkbox__style
+                            li.expanded__checkbox__item
+                                .expanded__checkbox__checkbox
+                                    label.checkbox__label Письменный стол
+                                        input.checkbox__input(type="checkbox")
+                                        span.checkbox__style 
+                            li.expanded__checkbox__item
+                                .expanded__checkbox__checkbox
+                                    label.checkbox__label Кроватка
+                                        input.checkbox__input(type="checkbox")
+                                        span.checkbox__style
+                            li.expanded__checkbox__item
+                                .expanded__checkbox__checkbox
+                                    label.checkbox__label Телевизор
+                                        input.checkbox__input(type="checkbox")
+                                        span.checkbox__style
+                            li.expanded__checkbox__item
+                                .expanded__checkbox__checkbox
+                                    label.checkbox__label Шампунь
+                                        input.checkbox__input(type="checkbox")
+                                        span.checkbox__style
+                    .expanded__checkbox
+                        .expanded__checkbox___top
+                            h3.expanded__checkbox___title expandable checkbox list
+                            .expanded__checkbox__caret
+                                span.material-icons-outlined.expanded__caret expand_more
+                        ul.expanded__checkbox__menu
+                            li.expanded__checkbox__item
+                                .expanded__checkbox__checkbox
+                                    label.checkbox__label Завтрак
+                                        input.checkbox__input(type="checkbox")
+                                        span.checkbox__style
+                            li.expanded__checkbox__item
+                                .expanded__checkbox__checkbox
+                                    label.checkbox__label Письменный стол
+                                        input.checkbox__input(type="checkbox")
+                                        span.checkbox__style 
+                            li.expanded__checkbox__item
+                                .expanded__checkbox__checkbox
+                                    label.checkbox__label Кроватка
+                                        input.checkbox__input(type="checkbox")
+                                        span.checkbox__style
+                            li.expanded__checkbox__item
+                                .expanded__checkbox__checkbox
+                                    label.checkbox__label Телевизор
+                                        input.checkbox__input(type="checkbox")
+                                        span.checkbox__style
+                            li.expanded__checkbox__item
+                                .expanded__checkbox__checkbox
+                                    label.checkbox__label Шампунь
+                                        input.checkbox__input(type="checkbox")
+                                        span.checkbox__style
+            .like-test
+                .like
+                    h3 like button
+                    .like__box
+                        .like__form
+                            span.like__form-heart.material-icons-outlined favorite_border
+                            span.like__form-number 12
+                .like
+                    .like__box
+                        .like__form
+                            span.like__form-heart.material-icons-outlined favorite_border
+                            span.like__form-number 12
+                .like
+                    .like__box
+                        .like__form.like__form-liked 
+                            span.like__form-heart.like__form-heart-liked.material-symbols-outlined favorite
+                            span.like__form-number.like__form-number-liked 13
+                
+            .rate-star
+                h3 Rate button
+                .rate-star__box
+                    .rate-star__form
+                        .rate-star__inner
+                            input.rate-star__input(type="radio", name="rating-star", id="5")
+                            label.rate-star__label(for="5")
+                            input.rate-star__input(type="radio", name="rating-star", id="4")
+                            label.rate-star__label(for="4")
+                            input.rate-star__input(type="radio", name="rating-star", id="3")
+                            label.rate-star__label(for="3")
+                            input.rate-star__input(type="radio", name="rating-star", id="2")
+                            label.rate-star__label(for="2")
+                            input.rate-star__input(type="radio", name="rating-star", id="1")
+                            label.rate-star__label(for="1")
+            .calendar
+                .calendar__box
+                    .calendar__form
+                        .calendar__top
+                            span.material-icons-outlined.date-arrow(id="prev")  arrow_back
+                            p.current-date 
+                            span.material-icons-outlined.date-arrow(id="next") arrow_forward    
+                        .calendar__menu
+                            ul.weeks
+                                li
+                                    h3.date-title Пн
+                                li
+                                    h3.date-title Вт
+                                li
+                                    h3.date-title Ср
+                                li
+                                    h3.date-title Чт
+                                li
+                                    h3.date-title Пт
+                                li
+                                    h3.date-title Сб
+                                li
+                                    h3.date-title Вс
+                            ul.days
+             
 

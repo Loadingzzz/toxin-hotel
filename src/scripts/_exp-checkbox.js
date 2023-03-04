@@ -59,7 +59,7 @@ const expCheckBoxWrapper = document.querySelectorAll('.expanded__checkbox').forE
             });
 
     document.addEventListener('click', function(e){
-        console.log('WINDOW')
+        
         if (e.target !== expCheckBox & e.target !== expCheckBoxTitle & e.target !== expCheckBoxCaretBox){
         expCheckBoxMenu.classList.remove('expanded__checkbox__menu-open')
         expCheckBoxCaretBox.classList.remove('expanded__checkbox__caret-rotate')

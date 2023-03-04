@@ -117,28 +117,37 @@ const globalCounter = document.querySelectorAll('.customDropdown').forEach(funct
         let innerHtmlTwo = innerNumTwo + " " + innerTitleTwo;
         let innerHtmlThree = innerNumThree + " " + innerTitleThree;
 
-        if (innerNumOne>=1) {
+        
+
+
+
+
+
+
+
+
+
+        if (innerNumOne>1) {
             guestQuantity.innerHTML = innerHtmlOne;
             guestQuantity.classList.add('dropdown__item__title-apply');
         }
 
-        // if (innerNumOne=1) {
-        //     guestQuantity.innerHTML = innerHtmlOne;
-        //     guestQuantity.classList.add('dropdown__item__title-apply');
-        // } 
-
-
-        if (innerNumTwo>=1) {
+    
+        if (innerNumTwo>1) {
             guestQuantity.innerHTML = innerHtmlTwo;
             guestQuantity.classList.add('dropdown__item__title-apply');
         }
-
-        if (innerNumThree>=1) {
+        
+        if (innerNumThree>1) {
             guestQuantity.innerHTML = innerHtmlThree;
             guestQuantity.classList.add('dropdown__item__title-apply');
         }
 
-        if (innerNumOne>=1 && innerNumTwo>=1) {
+
+
+
+
+        if (innerNumOne>1 && innerNumTwo>=1) {
             guestQuantity.innerHTML = innerHtmlOne + ", " +innerHtmlTwo;
             guestQuantity.classList.add('dropdown__item__title-apply');
         }
@@ -148,10 +157,14 @@ const globalCounter = document.querySelectorAll('.customDropdown').forEach(funct
             guestQuantity.classList.add('dropdown__item__title-apply');
         }
 
-        if (innerNumOne>=1 && innerNumThree>=1) {
+        if (innerNumOne>1 && innerNumThree>=1) {
             guestQuantity.innerHTML = innerHtmlOne + ", " +innerHtmlThree;
             guestQuantity.classList.add('dropdown__item__title-apply');
         }
+
+
+
+
 
         if (innerNumOne>=1 && innerNumTwo>=1 &&  innerNumThree>=1) {
             guestQuantity.innerHTML = innerHtmlOne + ", " +innerHtmlTwo + ", " + innerHtmlThree ;
@@ -162,6 +175,29 @@ const globalCounter = document.querySelectorAll('.customDropdown').forEach(funct
             guestQuantity.innerHTML = "Сколько помещений";
             guestQuantity.classList.remove('dropdown__item__title-apply');
         }
+
+
+
+
+        if (innerNumOne< 2 && innerNumOne>0 ) {
+            guestQuantity.innerHTML = innerNumOne + " спальня";
+            guestQuantity.classList.add('dropdown__item__title-apply');
+        }
+
+        if (innerNumTwo < 2 && innerNumTwo > 0 ) {
+            guestQuantity.innerHTML = innerNumTwo + " кровать";
+            guestQuantity.classList.add('dropdown__item__title-apply');
+        }
+
+        if (innerNumThree < 2 && innerNumThree > 0 ) {
+            guestQuantity.innerHTML = innerNumThree + " ванная комната";
+            guestQuantity.classList.add('dropdown__item__title-apply');
+        }
+
+
+
+
+        
     })
     counterButtonPlusTwo.addEventListener('click', function (){
         let innerTitleOne = dropDowmTittleInnerOne.innerText;

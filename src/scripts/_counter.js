@@ -12,9 +12,9 @@ const globalCounter = document.querySelectorAll('.dropdown').forEach(function (c
     const counterBtnMinusThree = counterWrapper.querySelector('.counter__button-minus-three');
 
     const counterInnerApply = counterWrapper.querySelector('.menu__button-apply');
-    console.log(counterInnerApply);
+    
     const counterInnerClean = counterWrapper.querySelector('.menu__button-clean');
-    console.log(counterInnerClean);
+    
 
 
     const counterOne = counterWrapper.querySelector('.counter__value-one');

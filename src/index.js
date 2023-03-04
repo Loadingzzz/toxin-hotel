@@ -7,7 +7,8 @@ import './styles/index.scss';
 import './scripts/_input-email.js';
 import './scripts/_buttons.js';
 
-
+import './scripts/_calendar.js';
+import './scripts/_like-button.js';
 import './scripts/_dropdown.js';
 import './scripts/_custom-dropdown.js';
 import './scripts/_exp-checkbox.js';

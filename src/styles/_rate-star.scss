@@ -1,0 +1,69 @@
+$ds100:rgba(31, 32, 65, 1);
+$ds75:rgba(31, 32, 65, 0.75);
+$ds50:rgba(31, 32, 65, 0.5);
+$ds25:rgba(31, 32, 65, 0.25);
+$ds5:rgba(31, 32, 65, 0.05);
+$purple: rgba(188, 156, 255, 1);
+$green: rgba(111, 207, 151, 1);
+$linear1: linear-gradient(180deg, rgba(188, 156, 255, 1),rgba(139, 164, 249, 1));
+$linear2: linear-gradient(180deg, rgba(188, 156, 255, 0.5),rgba(139, 164, 249, 0.5));
+
+
+.rate-star__form {
+    position: relative;
+    font-size: 24px;
+    display: inline-block;
+}
+
+.rate-star__form::before {
+    display: block;
+    content: "☆☆☆☆☆";
+    color: $purple;
+}
+
+.rate-star__inner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+}
+
+.rate-star__input {
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+}
+
+
+.rate-star__input:checked,
+.rate-star__input:checked ~ .rate-star__label{
+    color: $purple;
+}
+
+.rate-star__label{
+    flex: 0 0 20%;
+    cursor: pointer;
+    height: 100%;
+}
+
+
+.rate-star__label::before{
+    content:'★';
+    display: block;
+    
+    transition: color 0.3s;
+}
+
+.rate-star__label:hover,
+.rate-star__label:hover ~ .rate-star__label,
+.rate-star__label:checked ~ .rate-star__label:hover {
+    color: $purple;
+}

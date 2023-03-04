@@ -7,6 +7,9 @@
 @use '_input';
 @use '_bulletlist';
 @use '_exp-checkbox';
+@use '_like-button';
+@use '_rate-star';
+@use '_calendar';
 
 $ds100:rgba(31, 32, 65, 1);
 $ds75:rgba(31, 32, 65, 0.75);
@@ -17,6 +20,7 @@ $purple: rgba(188, 156, 255, 1);
 $green: rgba(111, 207, 151, 1);
 $linear1: linear-gradient(180deg, rgba(188, 156, 255, 1),rgba(139, 164, 249, 1));
 $linear2: linear-gradient(180deg, rgba(188, 156, 255, 0.5),rgba(139, 164, 249, 0.5));
+$linear3: linear-gradient(180deg, rgba(111, 207, 151, 1),rgba(102, 210, 234, 1));
 
 
 $ffm: 'Montserrat', sans-serif;
