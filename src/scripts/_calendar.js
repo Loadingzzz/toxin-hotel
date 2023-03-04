@@ -1,8 +1,8 @@
+const calendarBox = document.querySelectorAll('.calendar__form').forEach(function(calendarWrapper){
 
-
-    const currentDate = document.querySelector('.current-date');
-    daysTag = document.querySelector('.days');
-    const arrow = document.querySelectorAll('.date-arrow')
+    const currentDate = calendarWrapper.querySelector('.current-date');
+    const daysTag = calendarWrapper.querySelector('.days');
+    const arrow = calendarWrapper.querySelectorAll('.date-arrow')
 
 
 
@@ -67,3 +67,4 @@
             renderCalendar();
         })
     })
+})
