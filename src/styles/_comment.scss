@@ -1,0 +1,44 @@
+$ds100:rgba(31, 32, 65, 1);
+$ds75:rgba(31, 32, 65, 0.75);
+$ds50:rgba(31, 32, 65, 0.5);
+$ds25:rgba(31, 32, 65, 0.25);
+$ds5:rgba(31, 32, 65, 0.05);
+$purple: rgba(188, 156, 255, 1);
+$green: rgba(111, 207, 151, 1);
+$linear1: linear-gradient(180deg, rgba(188, 156, 255, 1),rgba(139, 164, 249, 1));
+$linear2: linear-gradient(180deg, rgba(188, 156, 255, 0.5),rgba(139, 164, 249, 0.5));
+$linear3: linear-gradient(180deg, rgba(111, 207, 151, 1),rgba(102, 210, 234, 1));
+
+
+
+.comment__top {
+    gap: 9px;
+    display: flex;
+    align-items: center;
+}
+
+
+.comment__top-img {
+   
+//    background-image: url(/src/images/profile-logo.png);
+}
+.comment__top-text{
+  color: $ds75;
+}
+
+.comment__top-text_title{
+    font-weight: 700;
+}
+
+.comment__bot {
+    display: flex;
+    align-items: top;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.comment__bot-text {
+    text-align: left;
+    max-width: 653px;
+    color: $ds75;
+}
