@@ -1,0 +1,25 @@
+.customDropdown
+    .select
+        .selected.guestQuantity
+            p.customDropdown_text Сколько помещений
+        .caret
+            span.material-icons-outlined expand_more 
+    ul.menu
+        li.menu__item.menu__item-one(data-value='old')
+            h3.dropdown__item__title-one спальни
+            .counter.counter-one
+                button.counter__button.counter__button-minus.counter__button-minus-one(data-direction='minus') -
+                .counter__value.counter__value-one 0
+                button.counter__button.counter__button-plus.counter__button-plus-one(data-direction='plus') +
+        li.menu__item.menu__item-two(data-value='baby')
+            h3.dropdown__item__title-two кровати
+            .counter.counter-two
+                button.counter__button.counter__button-minus.counter__button-minus-two(data-direction='minus') -
+                .counter__value.counter__value-two 0
+                button.counter__button.counter__button-plus.counter__button-plus-two(data-direction='plus') +
+        li.menu__item.menu__item-three(data-value='born')
+            h3.dropdown__item__title-three ванные комнаты
+            .counter.counter-three
+                button.counter__button.counter__button-minus.counter__button-minus-three(data-direction='minus') -
+                .counter__value.counter__value-three 0
+                button.counter__button.counter__button-plus.counter__button-plus-three(data-direction='plus') +

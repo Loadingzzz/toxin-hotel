@@ -13,6 +13,10 @@ const calendarBox = document.querySelectorAll('.calendar__form').forEach(functio
     currMonth = date.getMonth();
 
     console.log(date, currYear, currMonth)
+    console.log(currYear)
+    console.log(currMonth)
+    console.log(date.getDate())
+    
 
     const months = ["Январь","Февраль","Март","Апрель",
                     "Май","Июнь","Июль","Август","Сентярь",
@@ -21,6 +25,9 @@ const calendarBox = document.querySelectorAll('.calendar__form').forEach(functio
 
     const renderCalendar = () => {
         let firstDayOfMonths = new Date(currYear,currMonth, 0).getDay();
+        let firstDayOfMonths2 = new Date(currYear,currMonth, 0).getDay();
+        
+        
         let lastDateOfMonths = new Date(currYear,currMonth + 1, 0).getDate();
         let lastDateOfLastMonths = new Date(currYear,currMonth, 0).getDate();
         let lastDayOfMonths = new Date(currYear,currMonth,lastDateOfMonths).getDay();
@@ -37,7 +44,8 @@ const calendarBox = document.querySelectorAll('.calendar__form').forEach(functio
         for (let i = 1; i <= lastDateOfMonths; i++) {
             let isToday = i === date.getDate() && currMonth === new Date().getMonth() 
                                             && currYear === new Date().getFullYear() ? "active" : "";
-            liTag += `<li class="${isToday}" >${i}</li>`;
+            
+            liTag += `<li class="${isToday}" data-date="${date.toUTCString()}" >${i}</li>`;
         }
 
         for (let i = lastDayOfMonths; i < 7; i++) {
@@ -47,6 +55,7 @@ const calendarBox = document.querySelectorAll('.calendar__form').forEach(functio
 
         currentDate.innerHTML =`${months[currMonth]} ${currYear}`;
         daysTag.innerHTML = liTag;
+        
     }
 
     renderCalendar();
@@ -65,6 +74,21 @@ const calendarBox = document.querySelectorAll('.calendar__form').forEach(functio
                 date = new Date(); 
             }
             renderCalendar();
+        })  
+    })
+
+
+    const testDate = calendarWrapper.querySelectorAll('.days li')
+    testDate.forEach(function(e){
+        e.addEventListener('click', () =>{
+            console.log('PRIVETUEBA')
+            e.classList.add('startDate')   
+        })
+        e.addEventListener('click', () => {
+            if(e.classList.contains === 'startDate') {
+                console.log('DATASTARTANULA')
+            }
         })
     })
+
 })

@@ -138,4 +138,15 @@ $linear3: linear-gradient(180deg, rgba(111, 207, 151, 1),rgba(102, 210, 234, 1))
 }
 
 
+.startDate {
+    border-radius: 50%;
+    background-image: $linear1;
+}
+
+.endDate {
+    border-radius: 50%;
+    background-image: $linear1;
+}
+
+
 

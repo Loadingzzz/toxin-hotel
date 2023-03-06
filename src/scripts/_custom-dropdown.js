@@ -5,11 +5,14 @@ const dropDown = document.querySelectorAll('.customDropdown').forEach(function (
     
 
     const dropDownBtn = dropDownWrapper.querySelector('.select');
+  
     
     const dropDownList = dropDownWrapper.querySelector('.menu');
     const dropDownItem = dropDownList.querySelectorAll('.menu__item');
     const dropDownCaret = dropDownWrapper.querySelector('.caret');
-
+   
+   
+    
 
     dropDownBtn.addEventListener('click', function (){
         dropDownList.classList.toggle('menu-open');

@@ -9,113 +9,15 @@ html(lang='en')
         .container
             .dropdown-test
                 h3 dropdown
-                .dropdown
-                    .select
-                        .selected.guestQuantity Сколько гостей
-                        .caret
-                            span.material-icons-outlined expand_more 
-                    ul.menu
-                        li.menu__item(data-value='old')
-                            h3 взрослые
-                            .counter.counter-one
-                                button.counter__button.counter__button-minus.counter__button-minus-one(data-direction='minus') -
-                                .counter__value.counter__value-one 0
-                                button.counter__button.counter__button-plus(data-direction='plus') +
-                        li.menu__item(data-value='baby')
-                            h3 дети
-                            .counter.counter-two
-                                button.counter__button.counter__button-minus.counter__button-minus-two(data-direction='minus') -
-                                .counter__value.counter__value-two 0
-                                button.counter__button.counter__button-plus(data-direction='plus') +
-                        li.menu__item(data-value='born')
-                            h3 младенцы
-                            .counter.counter-three
-                                button.counter__button.counter__button-minus.counter__button-minus-three(data-direction='minus') -
-                                .counter__value.counter__value-three 0
-                                button.counter__button.counter__button-plus(data-direction='plus') +
-                        .menu__buttons
-                            button.menu__button-clean(data-dropdownclean='') очистить
-                            button.menu__button-apply(data-dropdowncart='') применить
-                .dropdown
-                    .select
-                        .selected.guestQuantity Сколько гостей
-                        .caret
-                            span.material-icons-outlined expand_more 
-                    ul.menu
-                        li.menu__item(data-value='old')
-                            h3 взрослые
-                            .counter.counter-one
-                                button.counter__button.counter__button-minus.counter__button-minus-one(data-direction='minus') -
-                                .counter__value.counter__value-one 0
-                                button.counter__button.counter__button-plus(data-direction='plus') +
-                        li.menu__item(data-value='baby')
-                            h3 дети
-                            .counter.counter-two
-                                button.counter__button.counter__button-minus.counter__button-minus-two(data-direction='minus') -
-                                .counter__value.counter__value-two 0
-                                button.counter__button.counter__button-plus(data-direction='plus') +
-                        li.menu__item(data-value='born')
-                            h3 младенцы
-                            .counter.counter-three
-                                button.counter__button.counter__button-minus.counter__button-minus-three(data-direction='minus') -
-                                .counter__value.counter__value-three 0
-                                button.counter__button.counter__button-plus(data-direction='plus') +
-                        .menu__buttons
-                            button.menu__button-clean(data-dropdownclean='') очистить
-                            button.menu__button-apply(data-dropdowncart='') применить
-                .customDropdown
-                    .select
-                        .selected.guestQuantity
-                            p.customDropdown_text Сколько помещений
-                        .caret
-                            span.material-icons-outlined expand_more 
-                    ul.menu
-                        li.menu__item.menu__item-one(data-value='old')
-                            h3.dropdown__item__title-one спальни
-                            .counter.counter-one
-                                button.counter__button.counter__button-minus.counter__button-minus-one(data-direction='minus') -
-                                .counter__value.counter__value-one 0
-                                button.counter__button.counter__button-plus.counter__button-plus-one(data-direction='plus') +
-                        li.menu__item.menu__item-two(data-value='baby')
-                            h3.dropdown__item__title-two кровати
-                            .counter.counter-two
-                                button.counter__button.counter__button-minus.counter__button-minus-two(data-direction='minus') -
-                                .counter__value.counter__value-two 0
-                                button.counter__button.counter__button-plus.counter__button-plus-two(data-direction='plus') +
-                        li.menu__item.menu__item-three(data-value='born')
-                            h3.dropdown__item__title-three ванные комнаты
-                            .counter.counter-three
-                                button.counter__button.counter__button-minus.counter__button-minus-three(data-direction='minus') -
-                                .counter__value.counter__value-three 0
-                                button.counter__button.counter__button-plus.counter__button-plus-three(data-direction='plus') +
-            .checkboxs
-                h3 Checkbox Buttons
-                .checkbox__box
-                    .checkbox__form
-                        label.checkbox__label Можно курить
-                            input.checkbox__input(type="checkbox")
-                            span.checkbox__style 
-                    .checkbox__form
-                        label.checkbox__label Можно с питомцами
-                            input.checkbox__input(type="checkbox" checked)
-                            span.checkbox__style 
-                    .checkbox__form
-                        label.checkbox__label Можно пригласить гостей (до 10 человек)
-                            input.checkbox__input(type="checkbox" checked)
-                            span.checkbox__style
-                    .checkbox__form.checkboxRich__form
-                        label.checkbox__label Широкий коридор
-                            p.checkboxRich__text Ширина коридоров в номере <br> не менее 91 см.
-                            input.checkbox__input(type="checkbox")
-                            span.checkbox__style
-                    .checkbox__form.checkboxRich__form
-                        label.checkbox__label Помощник для инвалидов
-                            p.checkboxRich__text На 1 этаже вас встретит специалист  и проводит до номера.
-                            input.checkbox__input(type="checkbox")
-                            span.checkbox__style
+                include pug/_dropdown
+                include pug/_dropdown
+                include pug/_custom-dropdown
+                include pug/_custom-dropdown
+                include pug/_checkbox
             .radio
                 h3 Checkbox Buttons
                 .radio__box
+                    include pug/_radio
                     .radio__form
                         label.radio__label Мужчина
                             input.radio__input(type="radio" name="gender" checked)
@@ -353,5 +255,31 @@ html(lang='en')
                                     span.like__form-heart.material-icons-outlined favorite_border
                                     span.like__form-number 12
                             p.comment__bot-text Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.
-
+            .pagination
+                .pagination__box
+                    .pagination__card
+                        .pagintaion__card-img 
+                        .pagintaion__card-text 
+                            .pagination__card-text-top__inner
+                                .pagination__card-text-top
+                                    p.pagination__card-text-top__num №<strong class="pag_strong-num">888</strong>
+                                    p.pagination__card-text-top__lux люкс
+                                p.pagination__card-text-top__price <strong class="pag_strong">9 990₽</strong> в сутки
+                            .pagination__card-text-bot__inner
+                                .pagination__card-text-bot__rate
+                                    .rate-star__form
+                                        .rate-star__inner
+                                            input.rate-star__input(type="radio" name="rating-star" id="5")
+                                            label.rate-star__label(for="5")
+                                            input.rate-star__input(type="radio" name="rating-star" id="4")
+                                            label.rate-star__label(for="4")
+                                            input.rate-star__input(type="radio" name="rating-star" id="3")
+                                            label.rate-star__label(for="3")
+                                            input.rate-star__input(type="radio" name="rating-star" id="2")
+                                            label.rate-star__label(for="2")
+                                            input.rate-star__input(type="radio" name="rating-star" id="1")
+                                            label.rate-star__label(for="1")
+                                .pagination__card-text-bot__rev
+                                    p.pagination__card-text-bot__rev-text <strong>145</strong> Отзывов 
+                    .pagination__form
 

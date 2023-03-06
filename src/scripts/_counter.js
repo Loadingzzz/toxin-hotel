@@ -1,10 +1,5 @@
 const globalCounter = document.querySelectorAll('.dropdown').forEach(function (counterWrapper) {
 
-
-
-
-
-
     const myCounter = counterWrapper.querySelectorAll(['.counter__button']);
 
     const counterBtnMinusOne = counterWrapper.querySelector('.counter__button-minus-one');
