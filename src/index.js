@@ -7,6 +7,7 @@ import './styles/index.scss';
 import './scripts/_input-email.js';
 import './scripts/_buttons.js';
 
+import './scripts/_slider.js'
 import './scripts/_pagination.js'
 import './scripts/_calendar.js';
 import './scripts/_like-button.js';
