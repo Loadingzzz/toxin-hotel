@@ -36,6 +36,11 @@ module.exports = {
         filename: "form-elements.html",
         template: "./src/form-elements.pug"
     })
+    ,
+    new HtmlWebpackPlugin( {
+        filename: "pagination-test.html",
+        template: "./src/pagination-test.pug"
+    })
     ],
     
     module: {

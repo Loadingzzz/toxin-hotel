@@ -9,15 +9,15 @@ html(lang='en')
         .container
             .dropdown-test
                 h3 dropdown
-                include pug/_dropdown
-                include pug/_dropdown
-                include pug/_custom-dropdown
-                include pug/_custom-dropdown
-                include pug/_checkbox
+                include pug/components/_dropdown
+                include pug/components/_dropdown
+                include pug/components/_custom-dropdown
+                include pug/components/_custom-dropdown
+                include pug/components/_checkbox
             .radio
                 h3 Checkbox Buttons
                 .radio__box
-                    include pug/_radio
+                    include pug/components/_radio
                     .radio__form
                         label.radio__label Мужчина
                             input.radio__input(type="radio" name="gender" checked)
@@ -56,15 +56,7 @@ html(lang='en')
                             span.material-symbols-outlined.button__arrow arrow_forward
             .toggle
                 .toggle__box
-                    .toggle__form
-                        .checkbox__form
-                            label.switch__checkbox__label Получать спецпредложения
-                                input.switch__checkbox__input(type="checkbox" checked )
-                                span.switch__checkbox__style
-                            .checkbox__form
-                            label.switch__checkbox__label Получать спецпредложения
-                                input.switch__checkbox__input(type="checkbox")
-                                span.switch__checkbox__style
+                    include pug/components/_toggle
             .input
                 .input__box
                     .input__form
@@ -73,160 +65,26 @@ html(lang='en')
                     .input__form
                         input.input__textfield.input__textfield-hovered(type="text" placeholder="Email" value="This is pretty awesome") 
             .bulletlist
-                .bulletlist__box
-                    .bulletlist__form
-                        ul.bulletlist__list
-                            li.bulletlist__item
-                                .bulletlist__disk 
-                                p.bulletlist__text Нельзя с питомцами
-                            li.bulletlist__item
-                                .bulletlist__disk
-                                p.bulletlist__text Без вечеринок и мероприятий
-                            li.bulletlist__item
-                                .bulletlist__disk
-                                p.bulletlist__text Время прибытия — после 13:00, а выезд до 12:00
+                include pug/components/_bulletlist
             .expanded__checkbox-test
-                .expanded__checkbox
-                    .expanded__checkbox___top
-                        h3.expanded__checkbox___title expandable checkbox list
-                        .expanded__checkbox__caret
-                            span.material-icons-outlined expand_more
-                    ul.expanded__checkbox__menu
-                        li.expanded__checkbox__item
-                            .expanded__checkbox__checkbox
-                                label.checkbox__label Завтрак
-                                    input.checkbox__input(type="checkbox")
-                                    span.checkbox__style
-                        li.expanded__checkbox__item
-                            .expanded__checkbox__checkbox
-                                label.checkbox__label Письменный стол
-                                    input.checkbox__input(type="checkbox")
-                                    span.checkbox__style 
-                        li.expanded__checkbox__item
-                            .expanded__checkbox__checkbox
-                                label.checkbox__label Кроватка
-                                    input.checkbox__input(type="checkbox")
-                                    span.checkbox__style
-                        li.expanded__checkbox__item
-                            .expanded__checkbox__checkbox
-                                label.checkbox__label Телевизор
-                                    input.checkbox__input(type="checkbox")
-                                    span.checkbox__style
-                        li.expanded__checkbox__item
-                            .expanded__checkbox__checkbox
-                                label.checkbox__label Шампунь
-                                    input.checkbox__input(type="checkbox")
-                                    span.checkbox__style
-                .expanded__checkbox
-                    .expanded__checkbox___top
-                        h3.expanded__checkbox___title expandable checkbox list
-                        .expanded__checkbox__caret
-                            span.material-icons-outlined.expanded__caret expand_more
-                    ul.expanded__checkbox__menu
-                        li.expanded__checkbox__item
-                            .expanded__checkbox__checkbox
-                                label.checkbox__label Завтрак
-                                    input.checkbox__input(type="checkbox")
-                                    span.checkbox__style
-                        li.expanded__checkbox__item
-                            .expanded__checkbox__checkbox
-                                label.checkbox__label Письменный стол
-                                    input.checkbox__input(type="checkbox")
-                                    span.checkbox__style 
-                        li.expanded__checkbox__item
-                            .expanded__checkbox__checkbox
-                                label.checkbox__label Кроватка
-                                    input.checkbox__input(type="checkbox")
-                                    span.checkbox__style
-                        li.expanded__checkbox__item
-                            .expanded__checkbox__checkbox
-                                label.checkbox__label Телевизор
-                                    input.checkbox__input(type="checkbox")
-                                    span.checkbox__style
-                        li.expanded__checkbox__item
-                            .expanded__checkbox__checkbox
-                                label.checkbox__label Шампунь
-                                    input.checkbox__input(type="checkbox")
-                                    span.checkbox__style
+                include pug/components/_exp-checkbox
+                include pug/components/_exp-checkbox
             .like-test
                 .like
                     h3 like button
-                    .like__box
-                        .like__form
-                            span.like__form-heart.material-icons-outlined favorite_border
-                            span.like__form-number 12
-                .like
-                    .like__box
-                        .like__form
-                            span.like__form-heart.material-icons-outlined favorite_border
-                            span.like__form-number 12
-                .like
+                    include pug/components/_like
                     .like__box
                         .like__form.like__form-liked 
                             span.like__form-heart.like__form-heart-liked.material-symbols-outlined favorite
                             span.like__form-number.like__form-number-liked 13
 
-            .rate-star
+            .rate-stars
                 h3 Rate button
                 .rate-star__box
-                    .rate-star__form
-                        .rate-star__inner
-                            input.rate-star__input(type="radio" name="rating-star" id="5")
-                            label.rate-star__label(for="5")
-                            input.rate-star__input(type="radio" name="rating-star" id="4")
-                            label.rate-star__label(for="4")
-                            input.rate-star__input(type="radio" name="rating-star" id="3")
-                            label.rate-star__label(for="3")
-                            input.rate-star__input(type="radio" name="rating-star" id="2")
-                            label.rate-star__label(for="2")
-                            input.rate-star__input(type="radio" name="rating-star" id="1")
-                            label.rate-star__label(for="1")
+                        include pug/components/_rate-star
             .calendar
                 .calendar__box
-                    .calendar__form
-                        .calendar__top
-                            span.material-icons-outlined.date-arrow(id="prev")  arrow_back
-                            p.current-date 
-                            span.material-icons-outlined.date-arrow(id="next") arrow_forward    
-                        .calendar__menu
-                            ul.weeks
-                                li
-                                    h3.date-title Пн
-                                li
-                                    h3.date-title Вт
-                                li
-                                    h3.date-title Ср
-                                li
-                                    h3.date-title Чт
-                                li
-                                    h3.date-title Пт
-                                li
-                                    h3.date-title Сб
-                                li
-                                    h3.date-title Вс
-                            ul.days
-                    .calendar__form
-                        .calendar__top
-                            span.material-icons-outlined.date-arrow(id="prev")  arrow_back
-                            p.current-date 
-                            span.material-icons-outlined.date-arrow(id="next") arrow_forward    
-                        .calendar__menu
-                            ul.weeks
-                                li
-                                    h3.date-title Пн
-                                li
-                                    h3.date-title Вт
-                                li
-                                    h3.date-title Ср
-                                li
-                                    h3.date-title Чт
-                                li
-                                    h3.date-title Пт
-                                li
-                                    h3.date-title Сб
-                                li
-                                    h3.date-title Вс
-                            ul.days
+                    include pug/components/_calendar
             .icontext
                 .icontext__box
                     .icontext__form
@@ -258,7 +116,8 @@ html(lang='en')
             .pagination
                 .pagination__box
                     .pagination__card
-                        .pagintaion__card-img 
+                        .slider__form
+                            include pug/components/_slider
                         .pagintaion__card-text 
                             .pagination__card-text-top__inner
                                 .pagination__card-text-top
@@ -267,35 +126,25 @@ html(lang='en')
                                 p.pagination__card-text-top__price <strong class="pag_strong">9 990₽</strong> в сутки
                             .pagination__card-text-bot__inner
                                 .pagination__card-text-bot__rate
-                                    .rate-star__form
-                                        .rate-star__inner
-                                            input.rate-star__input(type="radio" name="rating-star" id="5")
-                                            label.rate-star__label(for="5")
-                                            input.rate-star__input(type="radio" name="rating-star" id="4")
-                                            label.rate-star__label(for="4")
-                                            input.rate-star__input(type="radio" name="rating-star" id="3")
-                                            label.rate-star__label(for="3")
-                                            input.rate-star__input(type="radio" name="rating-star" id="2")
-                                            label.rate-star__label(for="2")
-                                            input.rate-star__input(type="radio" name="rating-star" id="1")
-                                            label.rate-star__label(for="1")
+                                    include pug/components/_rate-star
                                 .pagination__card-text-bot__rev
                                     p.pagination__card-text-bot__rev-text <strong>145</strong> Отзывов 
+            .range-slider
+                h3 Range slider
+                .range-slider__box
+                    include pug/components/_range-slider
+            .pagination
+                .pagination__box 
                     .pagination__form
-            .slider-test
-                .slider__box 
-                    .slider__form
-                        .slider
-                            img.slider__img(src=require("./images/pag-card1.png") alt="Murad-logo" )
-                            img.slider__img(src=require("./images/pag-card2.png") alt="Murad-logo")
-                            img.slider__img(src=require("./images/pag-card3.png") alt="Murad-logo")
-                            img.slider__img(src=require("./images/pag-card4.png") alt="Murad-logo")
-                        .slider__btn
-                            p.prev.material-icons-outlined chevron_left
-                            p.next.material-icons-outlined chevron_right
-                        .slider__dot
-                            span.dot
-                            span.dot
-                            span.dot
-                            span.dot
-
+                        .pagination__top
+                            ul.pagination__list 
+                                li.pagination__item.active-page 1
+                                li.pagination__item 2
+                                li.pagination__item 3
+                                li.pagination__item ...
+                                li.pagination__item 15
+                                li.pagination__btn.material-symbols-outlined arrow_forward
+                        .pagination__discription 
+                            p.pagination__discription-text 1 – 12 из 100+ вариантов аренды
+            
+                            

@@ -18,6 +18,7 @@ $linear3: linear-gradient(180deg, rgba(111, 207, 151, 1),rgba(102, 210, 234, 1))
     border-radius: 4px;  
     flex-wrap: nowrap;
     // background-color: red;
+    display: block;
 }
 
 .pagination__card-text-top {
@@ -88,14 +89,85 @@ $linear3: linear-gradient(180deg, rgba(111, 207, 151, 1),rgba(102, 210, 234, 1))
 }
 
 
-.pagintaion__card-img {
-    background-image: url(/src/images/pag-card1.jpg);
-    width: 270px;
-    flex-wrap: nowrap;
-    border-top-right-radius: 4px;
-    border-top-left-radius: 4px;
-    height: 151px;
-    background-repeat: no-repeat;
-    background: cover;
+
+
+.pagination__list {
+    display: flex;
+    max-width: 242px;
+    align-items: center;
+}
+
+.pagination__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 15px;
+    color: $ds50;
+}
+
+.active-page{
+    border-radius: 50%;
+    background-image: $linear1;
+    color: #fff;
+}
+
+
+.pagination__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-image: $linear3;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+ 
+}
+
+.pagination__discription-text {
+    color: $ds75;
+    padding-top: 10px;
+    padding-left: 6px;
+}
+
+.pagination__wrapper {
+    margin: auto;
+}
+.pagination__form-inner {
+    margin: auto;
+}
+.pagination__wrapper{
+    width: 1400px;
+
+}
+.pagination__card__wrapper {
+    max-width: 860px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    // margin-right: 100px;
     
+    margin-top: 100px;
+    margin: auto;
+    // column-count: 3;
+    // column-width: 30%;
+    // column-gap: 12px;
+}
+
+.pagination__card {
+    box-shadow: 0px 10px 20px $ds5;
+    margin-bottom: 20px;
+    margin-left: 12px;
+}
+
+.pagination__form {
+    
+    margin: auto;
+    margin-top: 41px;
 }

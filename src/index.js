@@ -1,12 +1,20 @@
 import './form-elements.pug';
-
+import './pagination-test.pug';
 import './color-and-types.pug';
 import './index.pug';
+
+
 import './pug/_head.pug';
+
+
+
 import './styles/index.scss';
+
+import './scripts/_pagination'
 import './scripts/_input-email.js';
 import './scripts/_buttons.js';
-
+import './scripts/_range-slider'
+import './scripts/_rate-star.js'
 import './scripts/_slider.js'
 import './scripts/_pagination.js'
 import './scripts/_calendar.js';
