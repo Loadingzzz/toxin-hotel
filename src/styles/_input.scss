@@ -7,7 +7,8 @@ $purple: rgba(188, 156, 255, 1);
 $green: rgba(111, 207, 151, 1);
 $linear1: linear-gradient(180deg, rgba(188, 156, 255, 1),rgba(139, 164, 249, 1));
 $linear2: linear-gradient(180deg, rgba(188, 156, 255, 0.5),rgba(139, 164, 249, 0.5));
-
+$cardsBGC:#F4F4F6;
+$ffm: 'Montserrat', sans-serif;
 
 
 .input__box {
@@ -33,6 +34,7 @@ $linear2: linear-gradient(180deg, rgba(188, 156, 255, 0.5),rgba(139, 164, 249, 0
 }
 
 .input__textfield::placeholder {
+    font-family: $ffm;
     color: $ds25;
     font-size: 14px;
     font-weight: 18px;

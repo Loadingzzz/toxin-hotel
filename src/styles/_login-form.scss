@@ -1,0 +1,39 @@
+$ds100:rgba(31, 32, 65, 1);
+$ds75:rgba(31, 32, 65, 0.75);
+$ds50:rgba(31, 32, 65, 0.5);
+$ds25:rgba(31, 32, 65, 0.25);
+$ds5:rgba(31, 32, 65, 0.05);
+$purple: rgba(188, 156, 255, 1);
+$green: rgba(111, 207, 151, 1);
+$linear1: linear-gradient(180deg, rgba(188, 156, 255, 1),rgba(139, 164, 249, 1));
+$linear2: linear-gradient(180deg, rgba(188, 156, 255, 0.5),rgba(139, 164, 249, 0.5));
+$linear3: linear-gradient(180deg, rgba(111, 207, 151, 1),rgba(102, 210, 234, 1));
+$cardsBGC:#F4F4F6;
+$ffm: 'Montserrat', sans-serif;
+
+
+.login-form__form {
+    width: 380px;
+    height: 358px;
+    background-color: #fff;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 40px 30px 30px 30px;
+}
+
+.login-form__title {
+    margin-bottom: 20px;
+}
+
+.login-form-bottom {
+    position: relative;
+    display: flex;
+    margin-top: 108px;
+    color: $ds100;
+}
+
+.button__form.login-card__button {
+    position: absolute;
+    right: 42+27+30px;
+    top: -32px;
+}

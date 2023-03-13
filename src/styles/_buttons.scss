@@ -9,14 +9,15 @@ $linear1: linear-gradient(180deg, rgba(188, 156, 255, 1),rgba(139, 164, 249, 1))
 $linear2: linear-gradient(180deg, rgba(188, 156, 255, 0.5),rgba(139, 164, 249, 0.5));
 
 .button__form {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
 }
 
-.button__box {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
+// .button__box {
+//     padding-top: 30px;
+//     padding-bottom: 30px;
+// }
 
 
 

@@ -14,10 +14,8 @@ $linear3: linear-gradient(180deg, rgba(111, 207, 151, 1),rgba(102, 210, 234, 1))
 .pagination__card {
     width: 270px;
     height: 257px;
-    // border: 1px solid black;
     border-radius: 4px;  
     flex-wrap: nowrap;
-    // background-color: red;
     display: block;
 }
 
@@ -168,8 +166,7 @@ $linear3: linear-gradient(180deg, rgba(111, 207, 151, 1),rgba(102, 210, 234, 1))
 
 .pagination__card {
     box-shadow: 0px 10px 20px $ds5;
-    margin-bottom: 20px;
-    margin-left: 12px;
+
 }
 
 .pagination__form {

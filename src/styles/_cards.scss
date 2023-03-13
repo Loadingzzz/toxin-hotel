@@ -1,0 +1,37 @@
+$ds100:rgba(31, 32, 65, 1);
+$ds75:rgba(31, 32, 65, 0.75);
+$ds50:rgba(31, 32, 65, 0.5);
+$ds25:rgba(31, 32, 65, 0.25);
+$ds5:rgba(31, 32, 65, 0.05);
+$purple: rgba(188, 156, 255, 1);
+$green: rgba(111, 207, 151, 1);
+$linear1: linear-gradient(180deg, rgba(188, 156, 255, 1),rgba(139, 164, 249, 1));
+$linear2: linear-gradient(180deg, rgba(188, 156, 255, 0.5),rgba(139, 164, 249, 0.5));
+$linear3: linear-gradient(180deg, rgba(111, 207, 151, 1),rgba(102, 210, 234, 1));
+$cardsBGC:#F4F4F6;
+$ffm: 'Montserrat', sans-serif;
+
+.container-cards {
+    display: flex;
+    gap: 40px;
+}
+.search-form {
+    margin-bottom: 40px;
+}
+
+.payment-form {
+    margin-bottom: 40px;
+}
+
+.cards__calendar__form {
+    // margin-left: 20px;
+    margin-bottom: 40px;
+}
+.cards__calendar__form-inner{
+    margin-left: 20px;
+}
+
+.cards__pagination-cards__form {
+    
+    margin-bottom: 40px;
+}
