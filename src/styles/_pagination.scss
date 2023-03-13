@@ -92,9 +92,12 @@ $linear3: linear-gradient(180deg, rgba(111, 207, 151, 1),rgba(102, 210, 234, 1))
 
 
 .pagination__list {
+    user-select: none;
+    cursor: pointer;
     display: flex;
-    max-width: 242px;
+    justify-content: center;
     align-items: center;
+    margin: auto;
 }
 
 .pagination__item {
@@ -107,6 +110,12 @@ $linear3: linear-gradient(180deg, rgba(111, 207, 151, 1),rgba(102, 210, 234, 1))
     font-size: 12px;
     line-height: 15px;
     color: $ds50;
+}
+
+.pagination__item:hover {
+    border-radius: 50%;
+    background-image: $linear1;
+    color: #fff;
 }
 
 .active-page{
@@ -151,13 +160,10 @@ $linear3: linear-gradient(180deg, rgba(111, 207, 151, 1),rgba(102, 210, 234, 1))
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    // margin-right: 100px;
-    
+
     margin-top: 100px;
     margin: auto;
-    // column-count: 3;
-    // column-width: 30%;
-    // column-gap: 12px;
+
 }
 
 .pagination__card {
@@ -170,4 +176,20 @@ $linear3: linear-gradient(180deg, rgba(111, 207, 151, 1),rgba(102, 210, 234, 1))
     
     margin: auto;
     margin-top: 41px;
+}
+
+.pagination__form-inner {
+    display: block; 
+}
+
+.pagination__nav {
+    display: block;
+    justify-content: center;
+    margin: auto;
+}
+
+.pagination__discription-text {
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }

@@ -2,7 +2,7 @@ import './form-elements.pug';
 import './pagination-test.pug';
 import './color-and-types.pug';
 import './index.pug';
-
+import './cards.pug'
 
 import './pug/_head.pug';
 

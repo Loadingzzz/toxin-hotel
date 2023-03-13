@@ -1,0 +1,32 @@
+doctype html
+html(lang='en')
+    include pug/_head
+        title Cards
+    body.body-cards
+        img.pageLogo(src=require('./images/page-logo.svg') alt='Pfuhdasdasdas')
+        .container.container-cards
+            .search-form
+                .search-form__box
+                    .search-form__form
+                        form.search-form__inner
+                            h1.search-form__title Найдём номера под ваши пожелания
+                            include pug/components/_dropdown
+            .registration-form
+                .registration-form__box
+                    .registration-form__form
+                        form.registration-form__inner
+                            h1.registration-form__title Регистрация аккаунта
+                            include pug/components/_dropdown
+            .payment-form
+                .payment-form__box
+                    .payment-form__form
+                        form.payment-form__inner
+                            h1.payment-form__title № 888
+                            include pug/components/_dropdown
+            .login-form
+                .login-form__box
+                    .login-form__form
+                        form.login-form__inner
+                            h1.login-form__title Войти
+                            include pug/components/_dropdown
+            include pug/components/_calendar

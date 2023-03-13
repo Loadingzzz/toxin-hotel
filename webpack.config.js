@@ -41,6 +41,11 @@ module.exports = {
         filename: "pagination-test.html",
         template: "./src/pagination-test.pug"
     })
+    ,
+    new HtmlWebpackPlugin( {
+        filename: "cards.html",
+        template: "./src/cards.pug"
+    })
     ],
     
     module: {
