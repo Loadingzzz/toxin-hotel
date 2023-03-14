@@ -129,7 +129,7 @@ const cdd = document.querySelectorAll('.customDropdown').forEach(function(e){
 
 
 
-        if (innerNumOne>1) {
+        if (innerNumOne>=1) {
             guestQuantity.innerHTML = innerHtmlOne;
             guestQuantity.classList.add('dropdown__item__title-apply');
         }
@@ -181,20 +181,20 @@ const cdd = document.querySelectorAll('.customDropdown').forEach(function(e){
 
 
 
-        if (innerNumOne< 2 && innerNumOne>0 ) {
-            guestQuantity.innerHTML = innerNumOne + " спальня";
-            guestQuantity.classList.add('dropdown__item__title-apply');
-        }
+        // if (innerNumOne< 2 && innerNumOne>0 ) {
+        //     guestQuantity.innerHTML = innerNumOne + " спальни";
+        //     guestQuantity.classList.add('dropdown__item__title-apply');
+        // }
 
-        if (innerNumTwo < 2 && innerNumTwo > 0 ) {
-            guestQuantity.innerHTML = innerNumTwo + " кровать";
-            guestQuantity.classList.add('dropdown__item__title-apply');
-        }
+        // if (innerNumTwo < 2 && innerNumTwo > 0 ) {
+        //     guestQuantity.innerHTML = innerNumTwo + " кровать";
+        //     guestQuantity.classList.add('dropdown__item__title-apply');
+        // }
 
-        if (innerNumThree < 2 && innerNumThree > 0 ) {
-            guestQuantity.innerHTML = innerNumThree + " ванная комната";
-            guestQuantity.classList.add('dropdown__item__title-apply');
-        }
+        // if (innerNumThree < 2 && innerNumThree > 0 ) {
+        //     guestQuantity.innerHTML = innerNumThree + " ванная комната";
+        //     guestQuantity.classList.add('dropdown__item__title-apply');
+        // }
 
 
 

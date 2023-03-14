@@ -1,154 +1,263 @@
-include pug/libs/_libs
-
 doctype html
 html(lang='en')
     include pug/_head
         title form-elements
     body
-        img.pageLogo(src=require('./images/page-logo.jpg') alt='Pfuhdasdasdas')
-        .container
-            .dropdown-test
-                h3 dropdown
-                include pug/components/_dropdown
-                include pug/components/_dropdown
-                include pug/components/_custom-dropdown
-                include pug/components/_custom-dropdown
-                include pug/components/_checkbox
-            .radio
-                h3 Checkbox Buttons
-                .radio__box
-                    include pug/components/_radio
-                    .radio__form
-                        label.radio__label Мужчина
-                            input.radio__input(type="radio" name="gender" checked)
-                            span.radio__style
-                    .radio__form
-                        label.radio__label Женщина
-                            input.radio__input(type="radio" name="gender")
-                            span.radio__style
-            .buttons
-                h3 buttons
-                .button__box
-                    .button__form
-                        .button
-                        button.button-clickme
-                            h3.button__title-clickme CLICK ME
-                    .button__form
-                        .button
-                        button.button-clickme.button-ckickme_hovered
-                            h3.button__title-clickme CLICK ME
-                    .button__form
-                        .button__cradient
-                            h3.button__title-clickme.button__title-gradient CLICK ME
-                    .button__form
-                        .button__cradient.button__cradient-hovered
-                            h3.button__title-clickme.button__title-gradient CLICK ME
-                    .button__form
-                        .button-clickme_ot
-                            h3.button__title-clickme.button__title-clickme_ot CLICK ME
-                    .button__form
-                        .button-clickme_ot
-                            h3.button__title-clickme.button__title-clickme_ot.button__title-clickme_ot-hovered CLICK ME
-                    .button__form
-                        .button
-                        button.button-clickme.button-payment
-                            h3.button__title-clickme перейти к оплате
-                            span.material-symbols-outlined.button__arrow arrow_forward
-            .toggle
-                .toggle__box
-                    include pug/components/_toggle
-                    .checkbox__form
-                        label.switch__checkbox__label Получать спецпредложения
-                            input.switch__checkbox__input(type="checkbox")
-                            span.switch__checkbox__style
-            .input
-                .input__box
+        img.pageLogo(src=require('./images/page-logo.svg') alt='Pfuhdasdasdas')
+        .container.container-form__elements
+            .container-form__elements-start
+                .form-elements__input
+                    .input__box
+                        .form-elements__input-top
+                            h3.form-elements__input-title Text Field
+                            h3.form-elements__input-title-pref Default
+                        .input__form
+                            input.input__textfield(type="text" placeholder="Email")
+                    .input__box
+                        .form-elements__input-top
+                            h3.form-elements__input-title Text Field
+                            h3.form-elements__input-title-pref Hover / Focus
+                        .input__form
+                            input.input__textfield.input__textfield-hovered(type="text" placeholder="Email" value="This is pretty awesome")
+                .form-elements__dropdown
+                    h3.form-elements__dropdown-title dropdown
+                    include pug/components/_dropdown
+                .form-elements__masked__textfield
+                    h3.form-elements__masked__textfield-title masked text field
                     .input__form
-                        input.input__textfield(type="text" placeholder="Email")
-                .input__box
-                    .input__form
-                        input.input__textfield.input__textfield-hovered(type="text" placeholder="Email" value="This is pretty awesome") 
-            .bulletlist
-                include pug/components/_bulletlist
-            .expanded__checkbox-test
-                include pug/components/_exp-checkbox
-                include pug/components/_exp-checkbox
-            .like-test
-                .like
-                    h3 like button
-                    include pug/components/_like
-                    .like__box
-                        .like__form.like__form-liked 
-                            span.like__form-heart.like__form-heart-liked.material-symbols-outlined favorite
-                            span.like__form-number.like__form-number-liked 13
-
-            .rate-stars
-                h3 Rate button
-                .rate-star__box
-                        include pug/components/_rate-star
-            .calendar
-                .calendar__box
-                    include pug/components/_calendar
-            .icontext
-                .icontext__box
-                    .icontext__form
-                        span.material-icons-outlined.icontext__icon insert_emoticon
-                        .icontext__text
-                            p.icontext__text-title Комфорт
-                            p.icontext__text-info Шумопоглощающие стены
-                    .icontext__form
-                        span.material-icons-outlined.icontext__icon location_city
-                        .icontext__text
-                            p.icontext__text-title Удобство
-                            p.icontext__text-info Окно в каждой из спален
-            .comment
-                .comment__box 
-                    h3 Comment
-                    .comment__form 
-                        .comment__top
-                            //- .comment__top-img
-                            img.comment__top-img(src=require("./images/profile-logo.png") alt="Murad-logo")
-                            .comment__top-text
-                                p.comment__top-text_title Мурад Сарафанов
-                                p.comment__top-text_info 5 дней назад
-                        .comment__bot
-                            .like__box
-                                .like__form
-                                    span.like__form-heart.material-icons-outlined favorite_border
-                                    span.like__form-number 12
-                            p.comment__bot-text Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.
-            .pagination
-                .pagination__box
-                    .pagination__card
-                        .slider__form
-                            include pug/components/_slider
-                        .pagintaion__card-text 
-                            .pagination__card-text-top__inner
-                                .pagination__card-text-top
-                                    p.pagination__card-text-top__num №<strong class="pag_strong-num">888</strong>
-                                    p.pagination__card-text-top__lux люкс
-                                p.pagination__card-text-top__price <strong class="pag_strong">9 990₽</strong> в сутки
-                            .pagination__card-text-bot__inner
-                                .pagination__card-text-bot__rate
-                                    include pug/components/_rate-star
-                                .pagination__card-text-bot__rev
-                                    p.pagination__card-text-bot__rev-text <strong>145</strong> Отзывов 
-            .range-slider
-                h3 Range slider
-                .range-slider__box
-                    include pug/components/_range-slider
-            .pagination
-                .pagination__box 
-                    .pagination__form
-                        .pagination__top
-                            ul.pagination__list 
-                                li.pagination__item.active-page 1
-                                li.pagination__item 2
-                                li.pagination__item 3
-                                li.pagination__item ...
-                                li.pagination__item 15
-                                li.pagination__btn.material-symbols-outlined arrow_forward
-                        .pagination__discription 
-                            p.pagination__discription-text 1 – 12 из 100+ вариантов аренды
+                        input.input__textfield(type="text" placeholder="ДД.ММ.ГГГГ")
+                .form-elements__dropdown-date
+                    .dropdown-date__form
+                        h3.search-form__end-title date Dropdown
+                        .dropdown-date-select
+                            p.dropdown-date-select-text ДД.ММ.ГГГГ
+                            span.material-icons-outlined.date-dropdown__caret expand_more
+                    .dropdown-date__form
+                        h3.search-form__end-title date Dropdown
+                        .dropdown-date-select
+                            p.dropdown-date-select-text 19.08.2019
+                            span.material-icons-outlined.date-dropdown__caret expand_more
+                .form-elements__dropdown-filter__date
+                    .dropdown-date__form
+                        h3.search-form__end-title filter date dropdown
+                        .dropdown-date-select
+                            p.dropdown-date-select-text 19 авг - 23 авг
+                            span.material-icons-outlined.date-dropdown__caret expand_more
+                .form-elements__subscription-textfield
+                        h3.form-elements__subscription-textfield-title subscription text field
+                        .subscription-textfield__form
+                            input.input__textfield(type="text" placeholder="Email")
+                            span.material-icons-outlined.subscription-textfield__arrow arrow_forward
+                .form-elements__custom-dropdown
+                    .form-elements__custom-dropdown__form 
+                        .form-elements__custom-dropdown-top
+                            h3.form-elements__custom-dropdown-title Text Field
+                            h3.form-elements__custom-dropdown-title-pref Default  
+                        .customDropdown
+                            .select
+                                .selected.guestQuantity
+                                    p.customDropdown_text 2 спальни, 2 кровати...
+                                .caret
+                                    span.material-icons-outlined expand_more 
+                            ul.menu
+                                li.menu__item.menu__item-one(data-value='old')
+                                    h3.dropdown__item__title-one спальни
+                                    .counter.counter-one
+                                        button.counter__button.counter__button-minus.counter__button-minus-one(data-direction='minus') -
+                                        .counter__value.counter__value-one 0
+                                        button.counter__button.counter__button-plus.counter__button-plus-one(data-direction='plus') +
+                                li.menu__item.menu__item-two(data-value='baby')
+                                    h3.dropdown__item__title-two кровати
+                                    .counter.counter-two
+                                        button.counter__button.counter__button-minus.counter__button-minus-two(data-direction='minus') -
+                                        .counter__value.counter__value-two 0
+                                        button.counter__button.counter__button-plus.counter__button-plus-two(data-direction='plus') +
+                                li.menu__item.menu__item-three(data-value='born')
+                                    h3.dropdown__item__title-three ванные комнаты
+                                    .counter.counter-three
+                                        button.counter__button.counter__button-minus.counter__button-minus-three(data-direction='minus') -
+                                        .counter__value.counter__value-three 0
+                                        button.counter__button.counter__button-plus.counter__button-plus-three(data-direction='plus') +
+                    .form-elements__custom-dropdown__form.form-elements__custom-dropdown__form-spc
+                        .form-elements__custom-dropdown-top
+                            h3.form-elements__custom-dropdown-title Text Field
+                            h3.form-elements__custom-dropdown-title-pref expanded  
+                        .customDropdown.customDropdown-spc 
+                            .select
+                                .selected.guestQuantity
+                                    p.customDropdown_text 2 спальни, 2 кровати...
+                                .caret
+                                    span.material-icons-outlined expand_more 
+                            ul.menu.customDropdown-spc__menu 
+                                li.menu__item.menu__item-one(data-value='old')
+                                    h3.dropdown__item__title-one спальни
+                                    .counter.counter-one
+                                        button.counter__button.counter__button-minus.counter__button-minus-one(data-direction='minus') -
+                                        .counter__value.counter__value-one 0
+                                        button.counter__button.counter__button-plus.counter__button-plus-one(data-direction='plus') +
+                                li.menu__item.menu__item-two(data-value='baby')
+                                    h3.dropdown__item__title-two кровати
+                                    .counter.counter-two
+                                        button.counter__button.counter__button-minus.counter__button-minus-two(data-direction='minus') -
+                                        .counter__value.counter__value-two 0
+                                        button.counter__button.counter__button-plus.counter__button-plus-two(data-direction='plus') +
+                                li.menu__item.menu__item-three(data-value='born')
+                                    h3.dropdown__item__title-three ванные комнаты
+                                    .counter.counter-three
+                                        button.counter__button.counter__button-minus.counter__button-minus-three(data-direction='minus') -
+                                        .counter__value.counter__value-three 0
+                                        button.counter__button.counter__button-plus.counter__button-plus-three(data-direction='plus') +
+                .form-elements__exp-checkbox
+                    include pug/components/_exp-checkbox
+                    .form-elements__exp-checkbox-open
+                        .expanded__checkbox
+                            .expanded__checkbox___top
+                                h3.expanded__checkbox___title expandable checkbox list
+                                .expanded__checkbox__caret
+                                    span.material-icons-outlined expand_more
+                            ul.expanded__checkbox__menu
+                                li.expanded__checkbox__item
+                                    .expanded__checkbox__checkbox
+                                        label.checkbox__label Завтрак
+                                            input.checkbox__input(type="checkbox")
+                                            span.checkbox__style
+                                li.expanded__checkbox__item
+                                    .expanded__checkbox__checkbox
+                                        label.checkbox__label Письменный стол
+                                            input.checkbox__input(type="checkbox" checked)
+                                            span.checkbox__style 
+                                li.expanded__checkbox__item
+                                    .expanded__checkbox__checkbox
+                                        label.checkbox__label Кроватка
+                                            input.checkbox__input(type="checkbox" checked)
+                                            span.checkbox__style
+                                li.expanded__checkbox__item
+                                    .expanded__checkbox__checkbox
+                                        label.checkbox__label Телевизор
+                                            input.checkbox__input(type="checkbox" checked) 
+                                            span.checkbox__style
+                                li.expanded__checkbox__item
+                                    .expanded__checkbox__checkbox
+                                        label.checkbox__label Шампунь
+                                            input.checkbox__input(type="checkbox")
+                                            span.checkbox__style
+                .form-elements__icon-text
+                    include pug/components/_icon-text
+            .container-right    
+                .container-form__for-comments
+                    .container-form__elements-center
+                        .form-elements__checkbox
+                            h3.form-elements__checkbox-title Checkbox Buttons
+                            include pug/components/_checkbox
+                        .form-elements__radio
+                            h3.form-elements__radio-title Radio Buttons
+                            .radio__box
+                                include pug/components/_radio
+                        .form-elements__toggle
+                            h3.form-elements__toggle-title Toggle
+                            include pug/components/_toggle
+                            .toggle__form
+                                .checkbox__form.checkbox__form-toggle
+                                    label.switch__checkbox__label Получать спецпредложения
+                                        input.switch__checkbox__input(type="checkbox" )
+                                        span.switch__checkbox__style
+                        .form-elements__like
+                            h3.form-elements__like-title like button
+                            .form-elements__like__form 
+                                .like__box
+                                    .like__form
+                                        span.like__form-heart.material-icons-outlined favorite_border
+                                        span.like__form-number 2
+                                .like__box
+                                    .like__form.like__form-liked
+                                        span.like__form-heart.material-symbols-outlined.like__form-heart-liked favorite_border
+                                        span.like__form-number.like__form-number-liked 12
+                        .form-elements__rate-star
+                            h3.form-elements__rate-star-title rate button
+                            .form-elements__rate-star__form
+                                .rate-star__form
+                                    .rate-star__inner
+                                        span.material-symbols-outlined.rate-star.star1 star_border
+                                        span.material-symbols-outlined.rate-star.star2 star_border
+                                        span.material-symbols-outlined.rate-star.star3 star_border
+                                        span.material-symbols-outlined.rate-star.star4 star_border
+                                        span.material-icons-outlined.rate-star.star5 star_border
+                                .rate-star__form
+                                    .rate-star__inner
+                                        span.material-symbols-outlined.rate-star.star1 star_border
+                                        span.material-symbols-outlined.rate-star.star2 star_border
+                                        span.material-symbols-outlined.rate-star.star3 star_border
+                                        span.material-symbols-outlined.rate-star.star4 star_border
+                                        span.material-symbols-outlined.rate-star.star5 star_border
+                        .form-elements-center__dropdown
+                            h3.form-elements-center__dropdown-title dropdown
+                            include pug/components/_dropdown
+                        .form-elements__rich-checkbox
+                            h3.form-elements__rich-checkbox-title rich Checkbox Buttons
+                            include pug/components/_rich-checkbox
+                    .container-form__elements-end
+                        .form-elements__range-slider
+                            h3.form-elements__range-slider-title Range Slider
+                            include pug/components/_range-slider
+                        .form-elements__buttons
+                            h3.form-elements__buttons-title buttons
+                            .form-elements__buttons__form
+                                include pug/components/_button
+                                .button__form
+                                    .button
+                                    button.button-clickme.button-ckickme_hovered
+                                        h3.button__title-clickme CLICK ME
+                            .form-elements__buttons__form-gradient
+                                include pug/components/_button-gradient
+                                .button__form
+                                    .button__cradient.button__cradient-hovered
+                                        h3.button__title-clickme.button__title-gradient CLICK ME
+                            .form-elements__buttons__form-ot
+                                include pug/components/_button-ot
+                                .button__form
+                                    .button-clickme_ot
+                                        h3.button__title-clickme.button__title-clickme_ot.button__title-clickme_ot-hovered CLICK ME
+                            include pug/components/_button-big
+                        .form-elements__pagination
+                                h3.form-elements__pagination-title pagination   
+                                .form-elements__pagination__form
+                                    include pug/components/_pagination 
+                        .form-elements__selected__dropdown
+                            h3.form-elements__selected__dropdown-title dropdown
+                            .dropdown
+                                .select
+                                    .selected.guestQuantity 3 гостя
+                                    .caret
+                                        span.material-icons-outlined expand_more 
+                                ul.menu
+                                    li.menu__item(data-value='old')
+                                        h3 взрослые
+                                        .counter.counter-one
+                                            span.counter__button.counter__button-minus.counter__button-minus-one(data-direction='minus') -
+                                            .counter__value.counter__value-one 2
+                                            span.counter__button.counter__button-plus(data-direction='plus') +
+                                    li.menu__item(data-value='baby')
+                                        h3 дети
+                                        .counter.counter-two
+                                            span.counter__button.counter__button-minus.counter__button-minus-two(data-direction='minus') -
+                                            .counter__value.counter__value-two 1
+                                            span.counter__button.counter__button-plus(data-direction='plus') +
+                                    li.menu__item(data-value='born')
+                                        h3 младенцы
+                                        .counter.counter-three
+                                            span.counter__button.counter__button-minus.counter__button-minus-three(data-direction='minus') -
+                                            .counter__value.counter__value-three 0
+                                            span.counter__button.counter__button-plus(data-direction='plus') +
+                                    .menu__buttons
+                                        span.menu__button-clean(data-dropdownclean='') очистить
+                                        span.menu__button-apply(data-dropdowncart='') применить
+                        .form-elements__bullet-list
+                            h3.form-elements__bullet-list-title bullet list   
+                            include pug/components/_bulletlist
+                .comment-container
+                    .form-elements__comment
+                        h3.form-elements__comment-title
+                        include pug/components/_comment
+                
             
                             

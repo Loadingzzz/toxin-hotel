@@ -16,8 +16,8 @@ $linear2: linear-gradient(180deg, rgba(188, 156, 255, 0.5),rgba(139, 164, 249, 0
     
     cursor: pointer;
     position: relative;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    // padding-top: 10px;
+    // padding-bottom: 10px;
 }
 
 .switch__checkbox__label {
@@ -49,7 +49,7 @@ $linear2: linear-gradient(180deg, rgba(188, 156, 255, 0.5),rgba(139, 164, 249, 0
     border: 1px solid $ds25;
     border-radius: 10px;
     left: -50px;
-    top: 10px;
+    top: -1px;
 }
 
 .switch__checkbox__style::after {

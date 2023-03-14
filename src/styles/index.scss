@@ -21,6 +21,7 @@
 @use '_buttons';
 @use '_login-form';
 @use '_cards';
+@use '_form-elements';
 
 $ds100:rgba(31, 32, 65, 1);
 $ds75:rgba(31, 32, 65, 0.75);
@@ -204,12 +205,18 @@ h3 {
     display: none;
 }
 
+
+
 .menu__item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 22px;
     padding-left: 15px;
+}
+
+.dropdown .menu__item {
+    padding-bottom: 7px;
 }
 
 
@@ -327,7 +334,9 @@ h3 {
 
 
 
-
+.dropdown .menu__buttons {
+    padding-top: 12px;
+}
 
 
 

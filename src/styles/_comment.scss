@@ -12,18 +12,25 @@ $linear3: linear-gradient(180deg, rgba(111, 207, 151, 1),rgba(102, 210, 234, 1))
 
 
 .comment__top {
+    position: relative;
     gap: 9px;
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
+    width: 220px;
 }
-
 
 .comment__top-img {
-   
-//    background-image: url(/src/images/profile-logo.png);
+    position: absolute;
+    top: -12px;  
+    left: -24px;
 }
+
+
 .comment__top-text{
   color: $ds75;
+  padding-left: 15px + 40px;
+  
 }
 
 .comment__top-text_title{

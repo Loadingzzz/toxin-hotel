@@ -22,6 +22,7 @@ $linear2: linear-gradient(180deg, rgba(188, 156, 255, 0.5),rgba(139, 164, 249, 0
     max-width: 267px;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .expanded__checkbox__menu {
@@ -31,6 +32,10 @@ $linear2: linear-gradient(180deg, rgba(188, 156, 255, 0.5),rgba(139, 164, 249, 0
 
 .expanded__checkbox__menu-open {
     display: block;
+    position: absolute;
+    z-index: 2;
+    background-color: #fff;
+    width: 266px;
 }
 
 

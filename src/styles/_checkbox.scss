@@ -12,14 +12,12 @@ $linear2: linear-gradient(180deg, rgba(188, 156, 255, 0.5),rgba(139, 164, 249, 0
 * {
     box-sizing: border-box;
 }
-.checkboxs{
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
 
-.checkbox__form {
+
+.checkbox__box.checkbox__form {
     cursor: pointer;
     position: relative;
+    padding-bottom: 10px;
 }
 
 .checkbox__label {
