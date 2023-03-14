@@ -65,17 +65,25 @@ $ffm: 'Montserrat', sans-serif;
 }
 
 .registration-form-bottom {
+    margin-top: 30px;
     display: flex;
-    margin-top: 64+42px
+    align-items: center;
+    justify-content: space-between;
 }
 .registration-form-bottom-text {
     color: $ds100;
 }
 
-.button__form.registration-card__button {
-    position: relative;
-    bottom: 30px;
-    left: 35px;
+
+.button__form.button__form-big.registration-form__btn {
+    margin-top: 20px;
 }
+
+.button__form.registration-form__btn-bottom {
+    z-index: 1;
+}
+
+
+
 
 

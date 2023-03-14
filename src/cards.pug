@@ -24,11 +24,9 @@ html(lang='en')
                                             span.material-icons-outlined.date-dropdown__caret expand_more
                                 h3.search-form__quantity-title гости
                                 include pug/components/_dropdown
-                                .button__form
-                                    .button
-                                        button.button-clickme.button-payment
-                                            h3.button__title-clickme подобрать номер
-                                            span.material-symbols-outlined.button__arrow arrow_forward
+                                .button__form.button__form-big.search-form__btn
+                                    button.button__big подобрать номер
+                                    span.material-icons-outlined.button__big-arrow arrow_forward
                 .registration-form
                     .registration-form__box
                         .registration-form__form
@@ -47,17 +45,13 @@ html(lang='en')
                                     input.input__textfield.input__email(type="email" placeholder="Email")
                                     input.input__textfield.input__password(type="password" placeholder="Пароль")
                                 include pug/components/_toggle
-                                .button__form.registration-form__button-find-number
-                                    .button
-                                        button.button-clickme.button-payment
-                                            h3.button__title-clickme подобрать номер
-                                            span.material-symbols-outlined.button__arrow arrow_forward
+                                .button__form.button__form-big.registration-form__btn
+                                    button.button__big подобрать номер
+                                    span.material-icons-outlined.button__big-arrow arrow_forward
                                 .registration-form-bottom
                                     p.registration-form-bottom-text Уже есть аккаунт на Toxin
-                                    .button__form.registration-card__button
-                                        .button
-                                        .button__cradient
-                                                h3.button__title-clickme.button__title-gradient войти
+                                    .button__form.registration-form__btn-bottom
+                                        button.button__gradient войти
             .container-cards-center
                 .payment-form
                     .payment-form__box
@@ -100,11 +94,9 @@ html(lang='en')
                                     h2.payment-form__total-text Итого
                                     .payment-form__total-seporator
                                     h2.payment-form__total-price 38 081₽
-                                .button__form.payment-form__button-book
-                                    .button
-                                        button.button-clickme.button-payment
-                                            h3.button__title-clickme забронировать
-                                            span.material-symbols-outlined.button__arrow arrow_forward                
+                                .button__form.button__form-big.payment-form__btn
+                                    button.button__big забронировать
+                                    span.material-icons-outlined.button__big-arrow arrow_forward              
                 .login-form
                     .login-form__box
                         .login-form__form
@@ -113,17 +105,13 @@ html(lang='en')
                                 .login-form__data-input
                                     input.input__textfield.input__email(type="email" placeholder="Email")
                                     input.input__textfield.input__password(type="password" placeholder="Пароль")
-                                .button__form.login-form__button-book
-                                    .button
-                                        button.button-clickme.button-payment
-                                            h3.button__title-clickme войти
-                                            span.material-symbols-outlined.button__arrow arrow_forward 
-                            .login-form-bottom
-                                p.login-form-bottom-text Нет аккаунта на Toxin?
-                                .button__form.login-card__button
-                                    .button
-                                        .button__cradient
-                                            h3.button__title-clickme.button__title-gradient создать
+                                .button__form.button__form-big.login-form__btn
+                                    button.button__big войти
+                                    span.material-icons-outlined.button__big-arrow arrow_forward
+                                .login-form-bottom
+                                    p.login-form-bottom-text Нет аккаунта на Toxin?
+                                    .button__form.login-form__btn-bottom
+                                        button.button__gradient создать
             .container-cards-end
                 .cards__calendar__form-inner
                     .cards__calendar__form

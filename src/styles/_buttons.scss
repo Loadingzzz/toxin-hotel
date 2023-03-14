@@ -7,71 +7,77 @@ $purple: rgba(188, 156, 255, 1);
 $green: rgba(111, 207, 151, 1);
 $linear1: linear-gradient(180deg, rgba(188, 156, 255, 1),rgba(139, 164, 249, 1));
 $linear2: linear-gradient(180deg, rgba(188, 156, 255, 0.5),rgba(139, 164, 249, 0.5));
+$ffm: 'Montserrat', sans-serif;
 
-.button__form {
-    padding: 0;
-    margin: 0;
-    margin-top: 20px;
+
+button {
+    text-transform: uppercase;
 }
 
-// .button__box {
-//     padding-top: 30px;
-//     padding-bottom: 30px;
-// }
 
-
-
-.button-clickme {
-    position: relative;
+.button__default {
+    background-image: $linear1;
+    font-family: $ffm;
+    border:none;
+    border-radius:22px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff; 
     width: 99px;
     height: 44px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    transition: all .3s;
+}
+
+.button__default:hover {
+    background-image: $linear2;
+}
+
+.button__default-hovered {
+    background-image: $linear2;
+}
+
+.button__ot {
     border: none;
-    background-image: $linear1;
-    border-radius: 22px;
-    text-align: center;
-    transition: background-image 0.3s;
-}
-
-.button-clickme:hover {
-    background-image: $linear2;
-}
-
-
-.button__title-clickme {
-    text-align: center;
-    color: #fff;
-}
-
-.button-ckickme_hovered { 
-    background-image: $linear2;
-}
-
-.button-clickme_border { 
     background-color: #fff;
     background-image: none;
-    border: 2px solid $purple;
-    border-image: $linear1;
-    border-image-slice: 1;
+    font-family: $ffm;
+    font-size: 12px;
+    font-weight: 700;
+    color: $purple;
+    line-height: 15px;
+    transition: all .3s;
 }
 
-.button-clickme_border h3 {
-    color:$purple;
+.button__ot:hover {
+    color: $ds50;
 }
 
-.button__cradient {
-    cursor: pointer;
-    box-sizing: border-box;
+.button__ot-hovered {
+    color: $ds50;
+}
+
+.button__gradient {
     position: relative;
+    background-color: #fff;
+    font-family: $ffm;
+    border:none;
+    border-radius:22px;
+    box-sizing: border-box;
+    text-align: center;
+    color: $purple; 
     width: 97px;
     height: 42px;
-    border-radius: 30px;
-    background: #fff;
-    text-align: center;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    transition: all .3s;   
 }
 
-.button__cradient::before {
+.button__gradient::before {
     content: "";
-    box-sizing: border-box;
     position: absolute;
     top: -2px;
     bottom: -2px;
@@ -82,37 +88,8 @@ $linear2: linear-gradient(180deg, rgba(188, 156, 255, 0.5),rgba(139, 164, 249, 0
     z-index: -1;
 }
 
-
-
-.button__cradient::before {
+.button__gradient-hovered::before {
     content: "";
-    box-sizing: border-box;
-    position: absolute;
-    top: -2px;
-    bottom: -2px;
-    left: -2px;
-    right: -2px;
-    background: $linear1;
-    border-radius: 22px;
-    z-index: -1;
-}
-
-
-
-.button__title-gradient {
-    user-select: none;
-    width: 70px;
-    text-align: center;
-    color: $purple;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.button__cradient-hovered::before {
-    content: "";
-    box-sizing: border-box;
     position: absolute;
     top: -2px;
     bottom: -2px;
@@ -123,31 +100,36 @@ $linear2: linear-gradient(180deg, rgba(188, 156, 255, 0.5),rgba(139, 164, 249, 0
     z-index: -1;
 }
 
-.button__title-clickme_ot {
-    color:$purple;
-    user-select: none;
-    cursor: pointer;
-    transition: all .2s;
-}
-
-.button__title-clickme_ot:hover {
-    color:$ds50;
-}
-
-.button__title-clickme_ot-hovered {
-    color:$ds50;
-}
-
-.button-payment {
-    position: relative;
+.button__big {
+    background-image: $linear1;
+    
+    font-family: $ffm;
+    border:none;
+    border-radius:22px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff; 
     width: 320px;
     height: 44px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    transition: all .3s;
 }
-
-.button__arrow {
+.button__form-big {
+    position: relative;
+}
+.button__big-arrow {
+    position: absolute;
     font-size: 24px;
-    right: 14px;
-    top: 10px;
-    position: absolute; 
+    // color: #fff;
+    // left: 0;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
     color: #fff;
 }

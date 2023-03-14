@@ -23,9 +23,13 @@ $ffm: 'Montserrat', sans-serif;
 }
 
 .button__form {
-    margin-top: 30px;
+    // margin-top: 30px;
     user-select: none;
-    padding: 0;
+    // padding: 0;
+}
+
+.button__form.button__form-big.search-form__btn {
+    margin-top: 30px;
 }
 
 .dropdown-date-select {

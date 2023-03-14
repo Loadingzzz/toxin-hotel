@@ -24,7 +24,7 @@ import './scripts/_dropdown.js';
 import './scripts/_custom-dropdown.js';
 import './scripts/_exp-checkbox.js';
 import './scripts/_counter.js';
-
+import './headers-and-footers.pug';
 import './scripts/_custom-counter.js';
 
 

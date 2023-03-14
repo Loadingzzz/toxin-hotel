@@ -1,7 +1,7 @@
 doctype html
 html(lang='en')
     include pug/_head
-        title form-elements
+        title Form Elements
     body
         img.pageLogo(src=require('./images/page-logo.svg') alt='Pfuhdasdasdas')
         .container.container-form__elements
@@ -202,22 +202,31 @@ html(lang='en')
                         .form-elements__buttons
                             h3.form-elements__buttons-title buttons
                             .form-elements__buttons__form
-                                include pug/components/_button
-                                .button__form
-                                    .button
-                                    button.button-clickme.button-ckickme_hovered
-                                        h3.button__title-clickme CLICK ME
+                                .form-elements__buttons__form-default 
+                                    include pug/components/_button
+                                    .button__form
+                                        button.button__default.button__default-hovered CLICK ME
+                                .form-elements__buttons__form-gradient
+                                    include pug/components/_button-gradient
+                                    .button__form
+                                        button.button__gradient.button__gradient-hovered CLICK ME
+                                .form-elements__buttons__form-ot
+                                    include pug/components/_button-ot
+                                    .button__form
+                                        button.button__ot.button__ot-hovered CLICK ME
+                                .form-elements__buttons__form-big
+                                    include pug/components/_button-big
                             .form-elements__buttons__form-gradient
-                                include pug/components/_button-gradient
-                                .button__form
-                                    .button__cradient.button__cradient-hovered
-                                        h3.button__title-clickme.button__title-gradient CLICK ME
+                                //- include pug/components/_button-gradient
+                                //- .button__form
+                                //-     .button__cradient.button__cradient-hovered
+                                //-         h3.button__title-clickme.button__title-gradient CLICK ME
                             .form-elements__buttons__form-ot
-                                include pug/components/_button-ot
-                                .button__form
-                                    .button-clickme_ot
-                                        h3.button__title-clickme.button__title-clickme_ot.button__title-clickme_ot-hovered CLICK ME
-                            include pug/components/_button-big
+                                //- include pug/components/_button-ot
+                                //- .button__form
+                                //-     .button-clickme_ot
+                                //-         h3.button__title-clickme.button__title-clickme_ot.button__title-clickme_ot-hovered CLICK ME
+                            //- include pug/components/_button-big
                         .form-elements__pagination
                                 h3.form-elements__pagination-title pagination   
                                 .form-elements__pagination__form

@@ -26,14 +26,20 @@ $ffm: 'Montserrat', sans-serif;
 }
 
 .login-form-bottom {
-    position: relative;
     display: flex;
-    margin-top: 108px;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: space-between;
     color: $ds100;
 }
 
-.button__form.login-card__button {
-    position: absolute;
-    right: 42+27+30px;
-    top: -32px;
+
+
+.button__form.login-form__btn-bottom {
+    z-index: 1;
 }
+
+.button__form.button__form-big.login-form__btn {
+    margin-top: 20px;
+}
+

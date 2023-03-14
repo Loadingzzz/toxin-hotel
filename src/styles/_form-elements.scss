@@ -243,10 +243,24 @@ $ffm: 'Montserrat', sans-serif;
 .form-elements__buttons__form,
 .form-elements__buttons__form-gradient,
 .form-elements__buttons__form-ot {
+    // display: flex;
+    // gap: 20px;
+    // margin-bottom: 30px;
+}
+
+
+.form-elements__buttons__form-default,
+.form-elements__buttons__form-ot,
+.form-elements__buttons__form-gradient {
     display: flex;
     gap: 20px;
     margin-bottom: 30px;
 }
+
+
+
+
+
 
 .button__form {
     margin: 0;
@@ -257,7 +271,7 @@ $ffm: 'Montserrat', sans-serif;
 }
 
 .form-elements__pagination {
-    margin-top: 44px + 40px + 30px ;
+    margin-top: 40px - 30px;
     
 }
 
