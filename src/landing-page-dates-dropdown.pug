@@ -1,0 +1,104 @@
+doctype html
+html(lang='en')
+    include pug/_head
+        title Landing page/Dates Dropdown
+    body.body-landing__page
+        .landing__page
+            header.header.header-main
+                .container-large
+                    .header__box
+                        .header__form 
+                            .container
+                                .header__inner
+                                    .header__logo.header-left
+                                        img.header__logo-logo(src=require('./images/header-logo.svg') alt='header-logo')
+                                        img.header__logo-icon(src=require('./images/TOXIN-icon.svg') alt='TOXIN-icon')
+                                    .header-right
+                                        nav.header__nav
+                                            ul.header__nav-list
+                                                li.header__nav-items 
+                                                    a.header__nav-link <strong class ="nav__strong">О нас</strong>   
+                                                li.header__nav-items
+                                                    .header__nav_component
+                                                        a.header__nav-link Услуги
+                                                        span.header__nav-link__caret.material-symbols-outlined expand_more
+                                                li.header__nav-items
+                                                    a.header__nav-link Вакансии
+                                                li.header__nav-items
+                                                    a.header__nav-link Новости
+                                                li.header__nav-items
+                                                    .header__nav_component
+                                                        a.header__nav-link Соглашения
+                                                        span.header__nav-link__caret.material-symbols-outlined expand_more
+                                        .header__btns
+                                            .button__form.button__form-gradient
+                                                button.button__gradient войти
+                                            .button__form
+                                                button.button__default.button__default-header зарегистрироваться
+            main.lading__page-main
+                .lading__page-main__form
+                    .container  
+                        .lading__page-main__wrapper
+                            .landing__page-search__form 
+                                include pug/components/_search-form
+                    
+            footer.footer
+                .container-large
+                    .footer__form
+                        .container
+                            .footer__form-inner-top
+                                .footer__logo__info
+                                    .header__logo.header-left.footer__logo
+                                        img.header__logo-logo(src=require('./images/header-logo.svg') alt='header-logo')
+                                        img.header__logo-icon(src=require('./images/TOXIN-icon.svg') alt='TOXIN-icon')
+                                    .footer__info
+                                        p.footer__info-text Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+                                ul.footer__navigation__list
+                                    li.footer__navigation__item 
+                                        h3.footer__navigation__item-title навигация
+                                    li.footer__navigation__item
+                                        p.footer__navigation__item-text О нас
+                                    li.footer__navigation__item
+                                        p.footer__navigation__item-text Новости
+                                    li.footer__navigation__item
+                                        p.footer__navigation__item-text Служба поддержки
+                                    li.footer__navigation__item
+                                        p.footer__navigation__item-text Услуги
+                                ul.footer__about-us__list
+                                    li.footer__about-us__item
+                                        h3.footer__about-us__item-title о нас
+                                    li.footer__about-us__item
+                                        p.footer__about-us__item-text О сервисе
+                                    li.footer__about-us__item
+                                        p.footer__about-us__item-text Наша команда
+                                    li.footer__about-us__item
+                                        p.footer__about-us__item-text Вакансии
+                                    li.footer__about-us__item
+                                        p.footer__about-us__item-text Инвесторы
+                                ul.footer__support__list
+                                    li.footer__support__item
+                                        h3.footer__support__item-title Служба поддержки
+                                    li.footer__support__item
+                                        p.footer__support__item-text Соглашения
+                                    li.footer__support__item
+                                        p.footer__support__item-text Сообщества
+                                    li.footer__support__item
+                                        p.footer__support__item-text Связь с нами
+                                ul.footer__subscription__list
+                                    li.footer__subscription__item
+                                        h3.footer__nsubscription__item-title Подписка
+                                    li.footer__subscription__item
+                                        p.footer__subscription__item-text Получайте специальные предложения и новости сервиса
+                                    li.footer__subscription__item
+                                        .footer__subscription-textfield
+                                            .subscription-textfield__form
+                                                input.input__textfield(type="text" placeholder="Email")
+                                                span.material-icons-outlined.subscription-textfield__arrow arrow_forward
+                            .footer__form-inner-bottom
+                                .footer__copyright
+                                    p.footer__copyright-text Copyright © 2018 Toxin отель. Все права защищены.
+                                .footer__social
+                                    a(href="#").fa-brands.fa-twitter.footer__social-icon
+                                    a(href="#").fa-brands.fa-square-facebook.footer__social-icon
+                                    a(href="#").fa-brands.fa-instagram.footer__social-icon   
+            

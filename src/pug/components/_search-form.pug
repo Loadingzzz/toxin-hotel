@@ -1,0 +1,21 @@
+.search-form
+    .search-form__box
+        .search-form__form
+            form.search-form__inner
+                h1.search-form__title Найдём номера под ваши пожелания
+                .serch__form-date
+                    .dropdown-date__form
+                        h3.search-form__start-title прибытие
+                        .dropdown-date-select
+                            p.dropdown-date-select-text ДД.ММ.ГГГГ
+                            span.material-icons-outlined.date-dropdown__caret expand_more
+                    .dropdown-date__form
+                        h3.search-form__end-title выезд
+                        .dropdown-date-select
+                            p.dropdown-date-select-text ДД.ММ.ГГГГ
+                            span.material-icons-outlined.date-dropdown__caret expand_more
+                h3.search-form__quantity-title гости
+                include ./_dropdown
+                .button__form.button__form-big.search-form__btn
+                    button.button__big подобрать номер
+                    span.material-icons-outlined.button__big-arrow arrow_forward

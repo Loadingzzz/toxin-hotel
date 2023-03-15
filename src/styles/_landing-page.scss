@@ -1,0 +1,61 @@
+$ds100:rgba(31, 32, 65, 1);
+$ds75:rgba(31, 32, 65, 0.75);
+$ds50:rgba(31, 32, 65, 0.5);
+$ds25:rgba(31, 32, 65, 0.25);
+$ds5:rgba(31, 32, 65, 0.05);
+$purple: rgba(188, 156, 255, 1);
+$green: rgba(111, 207, 151, 1);
+$linear1: linear-gradient(180deg, rgba(188, 156, 255, 1),rgba(139, 164, 249, 1));
+$linear2: linear-gradient(180deg, rgba(188, 156, 255, 0.5),rgba(139, 164, 249, 0.5));
+$linear3: linear-gradient(180deg, rgba(111, 207, 151, 1),rgba(102, 210, 234, 1));
+$cardsBGC:#F4F4F6;
+$ffm: 'Montserrat', sans-serif;
+
+
+.body-landing__page {
+    background-color: #E5E5E5;
+}
+
+html,
+body {
+height: 100%;
+}
+
+
+.landing__page {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 1 auto;
+}
+
+.lading__page-main__form {
+    position: relative;
+    min-height: 830px;
+    // max-width: 100vh;
+    
+    // background-repeat: no-repeat;
+    
+}
+
+.landing__page-image {
+    background-image: url(../images/room-decor-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: #fff;
+}
+
+
+
+.landing__page-search__form {
+    position: absolute;
+    top: 70px;
+}
+
+// .container-large {
+//     width: 1440px;
+//     margin: auto;
+// }

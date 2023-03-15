@@ -3,9 +3,10 @@ import './form-elements.pug';
 import './pagination-test.pug';
 import './color-and-types.pug';
 import './index.pug';
-
-
+import './landing-page.pug';
+import './landing-page-dates-dropdown.pug'
 import './pug/_head.pug';
+
 
 
 

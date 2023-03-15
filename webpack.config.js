@@ -51,6 +51,16 @@ module.exports = {
         filename: "headers-and-footers.html",
         template: "./src/headers-and-footers.pug"
     })
+    ,
+    new HtmlWebpackPlugin( {
+        filename: "landing-page.html",
+        template: "./src/landing-page.pug"
+    })
+    ,
+    new HtmlWebpackPlugin( {
+        filename: "landing-page-dates-dropdown.html",
+        template: "./src/landing-page-dates-dropdown.pug"
+    })
     ],
     
     module: {
