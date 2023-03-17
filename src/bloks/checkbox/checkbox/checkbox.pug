@@ -1,0 +1,15 @@
+mixin checkbox(checkboxInner1="",checkboxInner2="",checkboxInner3="")
+    .checkbox__box
+        .checkbox__form
+            label.checkbox__label=checkboxInner1
+                input.checkbox__input(type="checkbox")
+                span.checkbox__style 
+        .checkbox__form
+            label.checkbox__labelcheckboxInner2
+                input.checkbox__input(type="checkbox" checked)
+                span.checkbox__style 
+        .checkbox__form
+            label.checkbox__label=checkboxInner3
+                input.checkbox__input(type="checkbox" checked)
+                span.checkbox__style
+    

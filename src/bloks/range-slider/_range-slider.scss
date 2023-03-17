@@ -1,0 +1,117 @@
+$ds100:rgba(31, 32, 65, 1);
+$ds75:rgba(31, 32, 65, 0.75);
+$ds50:rgba(31, 32, 65, 0.5);
+$ds25:rgba(31, 32, 65, 0.25);
+$ds5:rgba(31, 32, 65, 0.05);
+$purple: rgba(188, 156, 255, 1);
+$green: rgba(111, 207, 151, 1);
+$linear1: linear-gradient(180deg, rgba(188, 156, 255, 1),rgba(139, 164, 249, 1));
+$linear2: linear-gradient(180deg, rgba(188, 156, 255, 0.5),rgba(139, 164, 249, 0.5));
+$linear3: linear-gradient(180deg, rgba(111, 207, 151, 1),rgba(102, 210, 234, 1));
+
+
+$ffm: 'Montserrat', sans-serif;
+
+.range-slider__form {
+    display: block;
+    width: 266px;
+    
+}
+
+
+
+
+.range-slider__line {
+    position: relative;
+    width: 266px;
+    height: 6px;
+    border: 1px solid $ds25;
+    border-radius: 3px;
+}
+
+.range-slider__progress {
+    position: absolute;
+    height: 6px;
+    background-image: $linear3;
+    border-radius: 3px;
+    top: -1px;
+    left: 33%;
+    right: 33%;
+}
+
+
+// .range-slider {
+//     padding-left: 50px;
+//     padding-top: 100px;
+//     padding-bottom: 100px;
+// }
+.range-slider__input{
+    color: $ds50;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-bottom: 21px;
+}
+.range-slider__input input{
+    font-family: $ffm;
+    border: none;
+    text-align: center;
+    color: $ds50;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400;
+    max-width: 45px;
+    padding: 0;
+    margin: 0;
+    width:auto;
+    height: auto;
+    user-select: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.seporator {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.range-slider__range-input {
+    position: relative;
+    width: 266px;
+}
+
+.range-slider__range-input input {
+    position: absolute;
+    top: -6px;
+    height: 6px;
+    width: 100%;
+    background:none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 13px;
+    height: 13px;
+    appearance: none;
+    border: 1px solid #fff;
+    pointer-events: auto;
+    -moz-appearance: none;
+    background-image: $linear3;
+    border-radius: 50%;
+}
+
+input[type=range]::-moz-range-thumb{
+    -webkit-appearance: none;
+    width: 13px;
+    appearance: none;
+    height: 13px;
+    border: 1px solid #fff;
+    pointer-events: auto;
+    -moz-appearance: none;
+    background-image: $linear3;
+    border-radius: 50%;
+}

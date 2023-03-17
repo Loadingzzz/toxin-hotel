@@ -2,6 +2,7 @@ $ds100:rgba(31, 32, 65, 1);
 $ds75:rgba(31, 32, 65, 0.75);
 $ds50:rgba(31, 32, 65, 0.5);
 $ds25:rgba(31, 32, 65, 0.25);
+$ds10:rgba(31, 32, 65, 0.1);
 $ds5:rgba(31, 32, 65, 0.05);
 $purple: rgba(188, 156, 255, 1);
 $green: rgba(111, 207, 151, 1);
@@ -15,6 +16,12 @@ $ffm: 'Montserrat', sans-serif;
 .body-landing__page {
     background-color: #E5E5E5;
 }
+
+// .header__logo{ .header__logo-link {
+//     display: flex;
+//     align-items: start;
+// }
+// }
 
 html,
 body {
@@ -46,6 +53,8 @@ main {
     background-position: center;
     background-size: cover;
     background-color: #fff;
+    animation: changing 30s infinite;
+    transition: all .1s;
 }
 
 
@@ -55,7 +64,21 @@ main {
     top: 70px;
 }
 
-// .container-large {
-//     width: 1440px;
-//     margin: auto;
-// }
+@keyframes changing  {
+    20% {
+        background-image: url(../images/room-decor-1.jpg);
+    }
+    40% {
+        background-image: url(../images/room-decor-2.jpg);
+    }
+    60% {
+        background-image: url(../images/room-decor-3.jpg);
+    }
+
+}
+.footer__form-inner-bottom.landing-page__footer-inner-bottom {
+    border-top: 1px solid $ds10;
+    border-width: 100%;
+}
+
+

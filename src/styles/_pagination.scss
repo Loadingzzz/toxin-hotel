@@ -150,15 +150,15 @@ $linear3: linear-gradient(180deg, rgba(111, 207, 151, 1),rgba(102, 210, 234, 1))
     margin: auto;
 }
 .pagination__wrapper{
-    width: 1400px;
-
+    width: 834px;
+       
 }
 .pagination__card__wrapper {
     max-width: 860px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-
+    gap:12px;   
     margin-top: 100px;
     margin: auto;
 

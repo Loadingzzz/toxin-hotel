@@ -11,8 +11,10 @@ html(lang='en')
                             .container
                                 .header__inner
                                     .header__logo.header-left
-                                        img.header__logo-logo(src=require('./images/header-logo.svg') alt='header-logo')
-                                        img.header__logo-icon(src=require('./images/TOXIN-icon.svg') alt='TOXIN-icon')
+                                        a.header__logo-link(href="landing-page.html")
+                                            img.header__logo-logo(src=require('./images/header-logo.svg') alt='header-logo')
+                                        a.header__logo-link(href="landing-page.html")
+                                            img.header__logo-icon(src=require('./images/TOXIN-icon.svg') alt='TOXIN-icon')
                                     .header-right
                                         nav.header__nav
                                             ul.header__nav-list
@@ -32,9 +34,11 @@ html(lang='en')
                                                         span.header__nav-link__caret.material-symbols-outlined expand_more
                                         .header__btns
                                             .button__form.button__form-gradient
-                                                button.button__gradient войти
+                                                a(href="login.html")
+                                                    button.button__gradient войти
                                             .button__form
-                                                button.button__default.button__default-header зарегистрироваться
+                                                a(href="registration.html")
+                                                    button.button__default.button__default-header зарегистрироваться
             main.lading__page-main.landing__page-image
                 .lading__page-main__form
                     .container  
@@ -49,8 +53,10 @@ html(lang='en')
                             .footer__form-inner-top
                                 .footer__logo__info
                                     .header__logo.header-left.footer__logo
-                                        img.header__logo-logo(src=require('./images/header-logo.svg') alt='header-logo')
-                                        img.header__logo-icon(src=require('./images/TOXIN-icon.svg') alt='TOXIN-icon')
+                                        a.header__logo-link(href="landing-page.html")
+                                            img.header__logo-logo(src=require('./images/header-logo.svg') alt='header-logo')
+                                        a.header__logo-link(href="landing-page.html")
+                                            img.header__logo-icon(src=require('./images/TOXIN-icon.svg') alt='TOXIN-icon')
                                     .footer__info
                                         p.footer__info-text Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
                                 ul.footer__navigation__list
@@ -94,7 +100,7 @@ html(lang='en')
                                             .subscription-textfield__form
                                                 input.input__textfield(type="text" placeholder="Email")
                                                 span.material-icons-outlined.subscription-textfield__arrow arrow_forward
-                            .footer__form-inner-bottom
+                            .footer__form-inner-bottom.landing-page__footer-inner-bottom
                                 .footer__copyright
                                     p.footer__copyright-text Copyright © 2018 Toxin отель. Все права защищены.
                                 .footer__social

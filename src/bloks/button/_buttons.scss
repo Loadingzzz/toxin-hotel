@@ -1,0 +1,143 @@
+$ds100:rgba(31, 32, 65, 1);
+$ds75:rgba(31, 32, 65, 0.75);
+$ds50:rgba(31, 32, 65, 0.5);
+$ds25:rgba(31, 32, 65, 0.25);
+$ds5:rgba(31, 32, 65, 0.05);
+$purple: rgba(188, 156, 255, 1);
+$green: rgba(111, 207, 151, 1);
+$linear1: linear-gradient(180deg, rgba(188, 156, 255, 1),rgba(139, 164, 249, 1));
+$linear2: linear-gradient(180deg, rgba(188, 156, 255, 0.5),rgba(139, 164, 249, 0.5));
+$ffm: 'Montserrat', sans-serif;
+
+
+button {
+    text-transform: uppercase;
+}
+
+
+.button__default {
+    background-image: $linear1;
+    font-family: $ffm;
+    border:none;
+    border-radius:22px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff; 
+    width: 99px;
+    height: 44px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    transition: all .3s;
+}
+
+.button__default:hover {
+    background-image: $linear2;
+}
+
+.button__default-hovered {
+    background-image: $linear2;
+}
+
+.button__ot {
+    border: none;
+    background-color: #fff;
+    background-image: none;
+    font-family: $ffm;
+    font-size: 12px;
+    font-weight: 700;
+    color: $purple;
+    line-height: 15px;
+    transition: all .3s;
+}
+
+.button__ot:hover {
+    color: $ds50;
+}
+
+.button__ot-hovered {
+    color: $ds50;
+}
+
+.button__gradient {
+    position: relative;
+    background-color: #fff;
+    font-family: $ffm;
+    border:none;
+    border-radius:22px;
+    box-sizing: border-box;
+    text-align: center;
+    color: $purple; 
+    width: 97px;
+    height: 42px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    transition: all .3s;   
+}
+
+.button__gradient::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    background: $linear1;
+    border-radius: 22px;
+    z-index: -1;
+}
+
+.button__gradient-hovered::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    background: $linear2;
+    border-radius: 22px;
+    z-index: -1;
+}
+
+.button__big {
+    background-image: $linear1;
+    
+    font-family: $ffm;
+    border:none;
+    border-radius:22px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff; 
+    width: 320px;
+    height: 44px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    transition: all .3s;
+}
+.button__form-big {
+    position: relative;
+}
+.button__big-arrow {
+    position: absolute;
+    font-size: 24px;
+    // color: #fff;
+    // left: 0;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    color: #fff;
+}
+
+.button__big:hover {
+    background-image: $linear2;
+}
+
+.button-link {
+    color: #fff;
+}

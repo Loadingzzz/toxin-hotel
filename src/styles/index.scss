@@ -25,11 +25,15 @@
 @use 'header-and-footers';
 @use '_landing-page';
 @use '_dropdown';
+@use '_search-room';
+@use '_registration-login';
+@use '_room';
 
 $ds100:rgba(31, 32, 65, 1);
 $ds75:rgba(31, 32, 65, 0.75);
 $ds50:rgba(31, 32, 65, 0.5);
 $ds25:rgba(31, 32, 65, 0.25);
+$ds10:rgba(31, 32, 65, 0.1);
 $ds5:rgba(31, 32, 65, 0.05);
 $purple: rgba(188, 156, 255, 1);
 $green: rgba(111, 207, 151, 1);

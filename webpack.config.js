@@ -61,6 +61,26 @@ module.exports = {
         filename: "landing-page-dates-dropdown.html",
         template: "./src/landing-page-dates-dropdown.pug"
     })
+    ,
+    new HtmlWebpackPlugin( {
+        filename: "search-room.html",
+        template: "./src/search-room.pug"
+    })
+    ,
+    new HtmlWebpackPlugin( {
+        filename: "registration.html",
+        template: "./src/registration.pug"
+    })
+    ,
+    new HtmlWebpackPlugin( {
+        filename: "login.html",
+        template: "./src/login.pug"
+    })
+    ,
+    new HtmlWebpackPlugin( {
+        filename: "room.html",
+        template: "./src/room.pug"
+    })
     ],
     
     module: {

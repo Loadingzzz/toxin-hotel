@@ -206,6 +206,7 @@ $ffm: 'Montserrat', sans-serif;
 .footer__form-inner-bottom {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-top: 23px;
     padding-bottom: 23px;
 }
@@ -253,7 +254,7 @@ $ffm: 'Montserrat', sans-serif;
     text-align: center;
 }
 .footer__social {
-    margin-top: 25px;
     display: flex;
     justify-content: center;
 }
+

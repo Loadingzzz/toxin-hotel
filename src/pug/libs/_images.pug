@@ -1,2 +1,2 @@
-mixin image(name)
-    img.src(src='../src/images/${name}.jpg', alt=name)
+mixin image(imageUrl="",imgClass="")
+    img(class=imgClass, url=imageUrl)

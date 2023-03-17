@@ -6,8 +6,10 @@ import './index.pug';
 import './landing-page.pug';
 import './landing-page-dates-dropdown.pug'
 import './pug/_head.pug';
-
-
+import './search-room.pug';
+import './registration.pug';
+import './login.pug';
+import './room.pug';
 
 
 import './styles/index.scss';

@@ -1,0 +1,11 @@
+mixin richCheckbox(title1="",title2="",text1="",text2="")
+    .checkbox__form.checkboxRich__form
+        label.checkbox__label=title1
+            p.checkboxRich__text!=text1
+            input.checkbox__input(type="checkbox")
+            span.checkbox__style
+    .checkbox__form.checkboxRich__form
+        label.checkbox__label=title2
+            p.checkboxRich__text=text2
+            input.checkbox__input(type="checkbox")
+            span.checkbox__style

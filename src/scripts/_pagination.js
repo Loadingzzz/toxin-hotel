@@ -3,15 +3,20 @@ const paginationWrapper = document.querySelectorAll('.pagination__wrapper').forE
     let thisPage = 1;
     let limit = 12;
     let list = paginationWrapper.querySelectorAll('.pagination__card');
- 
+    // const blockCounte = paginationWrapper.querySelectorAll()
 
 
-    // const nextPage = paginationWrapper.querySelector('.pagination__btn');
+    const cardNumber = paginationWrapper.querySelectorAll('.pag_strong-num')
+    
     const pages = paginationWrapper.querySelector('.pagination__list ')
     const pagesArray = Array.from(pages.children)
     const page = pages.querySelectorAll('.pagination__item')
 
-
+    console.log(cardNumber)
+    cardNumber.forEach((e,index)=> {
+        e.dataset.index = index
+        e.innerHTML = 1+index
+    })
     
 
     function pageClicker() {
@@ -24,7 +29,7 @@ const paginationWrapper = document.querySelectorAll('.pagination__wrapper').forE
                 thisPage = i;
                 loadItem()
                 page.classList.toggle('active-page')
-                // page.classList.toggle('active-page')
+                
                 
             })
         })
@@ -48,7 +53,8 @@ const paginationWrapper = document.querySelectorAll('.pagination__wrapper').forE
 
         list.forEach((item,key,index) => {
             if(item.dataset.index >= beginGet && item.dataset.index <= endGet) {
-                item.style.display = 'block';   
+                item.style.display = 'block';  
+                 
             } else {
                 item.style.display = 'none';
             }
@@ -76,14 +82,19 @@ const paginationWrapper = document.querySelectorAll('.pagination__wrapper').forE
                 let newPage = document.createElement('li');
                 newPage.classList.add('pagination__item')
                 newPage.innerHTML = i;
+                
+                
                 if (i === thisPage) {
                     newPage.classList.add('active-page');
                 }
                 
                 newPage.setAttribute("data-index", i);
+               
+                
                 paginationWrapper.querySelector('.pagination__list ').appendChild(newPage)
                 pageClicker()
             }
+            
             if (thisPage != count) {
                 let next = document.createElement('li')
                 next.innerHTML = 'arrow_forward'
@@ -93,15 +104,7 @@ const paginationWrapper = document.querySelectorAll('.pagination__wrapper').forE
                 next.classList.add('next__page')
         }
         
-
+        
 
   };
-
-
-
-    
-    
-    
-
-
 });

@@ -1,0 +1,174 @@
+$ds100:rgba(31, 32, 65, 1);
+$ds75:rgba(31, 32, 65, 0.75);
+$ds50:rgba(31, 32, 65, 0.5);
+$ds25:rgba(31, 32, 65, 0.25);
+$ds10:rgba(31, 32, 65, 0.1);
+$ds5:rgba(31, 32, 65, 0.05);
+$purple: rgba(188, 156, 255, 1);
+$green: rgba(111, 207, 151, 1);
+$linear1: linear-gradient(180deg, rgba(188, 156, 255, 1),rgba(139, 164, 249, 1));
+$linear2: linear-gradient(180deg, rgba(188, 156, 255, 0.5),rgba(139, 164, 249, 0.5));
+$linear3: linear-gradient(180deg, rgba(111, 207, 151, 1),rgba(102, 210, 234, 1));
+$cardsBGC:#F4F4F6;
+$ffm: 'Montserrat', sans-serif;
+
+.room-img {
+    background-image: url(/src/images/room.jpg);
+    min-height: 485px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.room__inner {
+    display: flex;
+    align-items: start;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    justify-content: space-between;
+}
+
+.room__info-data {
+    display: flex;
+    gap: 70px;
+}
+
+.room__info-data__icon-text-title,
+.room__info-data__icon-graf-title,
+.room__comments-title,
+.room__rules-bullet-title,
+.room__rules-cancel-title {
+    font-size: 19px;
+    line-height: 24px;
+    text-transform: none;
+    margin-bottom: 20px;
+}
+
+.icontext__form-spc {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.room__comments-top {
+    display: flex;
+    justify-content: space-between;
+    max-width: 712px;
+    p{
+        color: $ds50;
+
+    }
+}
+
+.room__comments {
+    padding-bottom: 30px;
+}
+
+.room__rules {
+    .room__rules-inner {
+        display: flex;
+        gap:70px;
+        .room__rules-cancel {
+            max-width: 341px;
+            .room__rules-cancel-text {
+                color: $ds75;
+            }
+        }
+    }
+}
+.room__info-data__icon-graf {
+    .room__info-data__icon-graf-inner{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    }
+    
+    .room__timetable {
+        position: relative;
+           width: 122px;
+           height: 122px;
+           background-image: url(/src/images/Pie.svg);
+           background-repeat: no-repeat;
+            
+        .room__timetable-inner{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            .room__timetable-inner__nummber{
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 29px;
+                color: $purple;
+            }
+            .room__timetable-inner__voice{
+                font-size: 12px;
+                line-height: 15px;
+                font-weight: 700;
+                color: $purple;
+            }
+        }
+    }
+    .room__timetable-info {
+        .room__timetable-info__list{
+            .room__timetable-info__item{
+                display: flex;
+                gap:5px;
+                align-items: center;
+                padding-bottom: 14px;
+                .room__timetable-info-dick{
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                }
+                .room__timetable-info-text{
+                    color: $ds75;
+                    text-transform: none;
+                }
+            }
+        }
+    }
+}
+.room__timetable-info-dick1{
+    background-image: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+}
+.room__timetable-info-dick2{
+    background-image: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+}
+.room__timetable-info-dick3{
+    background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+.room__timetable-info-dick4{
+    background-image: linear-gradient(180deg, #919191 0%, #3D4975 100%)
+}
+.room__page-main {
+    padding-bottom: 75px;
+}
+
+
+.timtable{
+    position: relative;
+    width: 122px;
+    height: 122px;
+    background-image: url(/src/images/Pie.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ttext {
+    // z-index: 1;
+}
+.pye {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.test {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
